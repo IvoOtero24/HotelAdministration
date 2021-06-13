@@ -1,7 +1,7 @@
 /*SQL Statements for creation and arrangment of DB Schema*/
 
 -- create user
-CREATE USER hotel_admin IDENTIFIED BY "********";
+CREATE USER hotel_admin IDENTIFIED BY "hoteladmin";
 
  -- grant user rights
 GRANT CONNECT, RESOURCE, CREATE VIEW, CREATE SYNONYM, CREATE TRIGGER 
