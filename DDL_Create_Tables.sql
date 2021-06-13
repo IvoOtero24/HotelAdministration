@@ -78,7 +78,7 @@ CREATE TABLE Reisepass(
 -------------------------------
 CREATE TABLE Gehaltsstufe(
 	GehaltsstufeID NUMBER NOT NULL,
-	Gehalt NUMBER(7,2) NOT NULL
+	Monatsgehalt NUMBER(7,2) NOT NULL
 );
 
 
