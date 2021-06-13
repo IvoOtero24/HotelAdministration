@@ -45,20 +45,11 @@ CREATE TABLE Service(
 
 
 -------------------------------
---  DDL table for Zimmerklasse
--------------------------------
-CREATE TABLE Zimmerklasse(
-	KlassenID NUMBER NOT NULL,
-	Beschreibung VARCHAR2(225) NOT NULL
-);
-
-
--------------------------------
 --  DDL table for Zimmer
 -------------------------------
 CREATE TABLE Zimmer(
 	ZimmerNr NUMBER NOT NULL,
-	KlassenID NUMBER NOT NULL
+	ZimmerklassenBeschriebung VARCHAR(250) NOT NULL
 );
 
 
@@ -129,7 +120,7 @@ CREATE TABLE Bankinformation(
 CREATE TABLE Personal(
 	PersonID NUMBER NOT NULL,	
 	GehaltsstufeID NUMBER NOT NULL,	
-	KontoNr NUMBER NOT NULL,	
+	IBAN VARCHAR(250) NOT NULL,	
 	AbteilungsID NUMBER NOT NULL
 );
 
@@ -140,7 +131,7 @@ CREATE TABLE Personal(
 CREATE TABLE Gast(
 	PersonID NUMBER NOT NULL,	
 	ReisepassID NUMBER NOT NULL,	
-	KontoNr NUMBER NOT NULL
+	IBAN VARCHAR(250) NOT NULL
 );
 
 
@@ -151,7 +142,7 @@ CREATE TABLE Lieferanten(
 	LieferantenID NUMBER NOT NULL,	
 	Lieferantenname VARCHAR2(255) NOT NULL,	
 	AdressID NUMBER NOT NULL,	
-	KontoNr NUMBER NOT NULL
+	IBAN VARCHAR(250) NOT NULL
 );
 
 
@@ -177,7 +168,7 @@ CREATE TABLE Bestellung(
 	LieferantenID NUMBER NOT NULL,	
 	AdressID NUMBER NOT NULL,		
   RechnungsID NUMBER NOT NULL,
-  Buchungspreis NUMBER(7,2) NOT NULL	
+  Bestellungspreis NUMBER(7,2) NOT NULL	
 );
 
 
@@ -276,12 +267,7 @@ SELECT table_name FROM user_tables;
 
   CREATE UNIQUE INDEX "SYS_C0012348" ON "SERVICE" ("SERVICEID") 
   ;
---------------------------------------------------------
---  DDL FOR INDEX SYS_C0040338
---------------------------------------------------------
 
-  CREATE UNIQUE INDEX "SYS_C0012349" ON "ZIMMERKLASSE" ("KLASSENID") 
-  ;
 --------------------------------------------------------
 --  DDL FOR INDEX SYS_C0040346
 --------------------------------------------------------
@@ -322,7 +308,7 @@ SELECT table_name FROM user_tables;
 --  DDL FOR INDEX SYS_C0040316
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "SYS_C0012356" ON "BANKINFORMATION" ("KONTONR") 
+  CREATE UNIQUE INDEX "SYS_C0012356" ON "BANKINFORMATION" ("IBAN") 
   ;
 --------------------------------------------------------
 --  DDL FOR INDEX SYS_C0040352
@@ -412,11 +398,6 @@ SELECT table_name FROM user_tables;
    ALTER TABLE "SERVICE" ADD PRIMARY KEY ("SERVICEID") ENABLE;
 
 --------------------------------------------------------
---  CONSTRAINTS FOR TABLE ZIMMERKLASSE  
---------------------------------------------------------
-   ALTER TABLE "ZIMMERKLASSE" ADD PRIMARY KEY ("KLASSENID") ENABLE;
-
---------------------------------------------------------
 --  CONSTRAINTS FOR TABLE ZIMMER 
 --------------------------------------------------------
    ALTER TABLE "ZIMMER" ADD PRIMARY KEY ("ZIMMERNR") ENABLE;
@@ -449,7 +430,7 @@ SELECT table_name FROM user_tables;
 --------------------------------------------------------
 --  CONSTRAINTS FOR TABLE BANKINFORMATION  
 --------------------------------------------------------
-   ALTER TABLE "BANKINFORMATION" ADD PRIMARY KEY ("KONTONR") ENABLE;
+   ALTER TABLE "BANKINFORMATION" ADD PRIMARY KEY ("IBAN") ENABLE;
 
 
 --------------------------------------------------------
@@ -518,13 +499,6 @@ SELECT table_name FROM user_tables;
 
   ALTER TABLE "WARE" ADD FOREIGN KEY ("WARENARTID")
 	  REFERENCES "WARENART" ("WARENARTID") ENABLE;
-	  
---------------------------------------------------------
---  REF CONSTRAINTS FOR TABLE ZIMMER
---------------------------------------------------------
-
-  ALTER TABLE "ZIMMER" ADD FOREIGN KEY ("KLASSENID")
-	  REFERENCES "ZIMMERKLASSE" ("KLASSENID") ENABLE;
 
 --------------------------------------------------------
 --  REF CONSTRAINTS FOR TABLE PERSON
@@ -552,8 +526,8 @@ SELECT table_name FROM user_tables;
   ALTER TABLE "PERSONAL" ADD FOREIGN KEY ("ABTEILUNGSID")
 	  REFERENCES "ABTEILUNG" ("ABTEILUNGSID") ENABLE;
 
-  ALTER TABLE "PERSONAL" ADD FOREIGN KEY ("KONTONR")
-	  REFERENCES "BANKINFORMATION" ("KONTONR") ENABLE;
+  ALTER TABLE "PERSONAL" ADD FOREIGN KEY ("IBAN")
+	  REFERENCES "BANKINFORMATION" ("IBAN") ENABLE;
 
 --------------------------------------------------------
 --  REF CONSTRAINTS FOR TABLE GAST  
@@ -565,8 +539,8 @@ SELECT table_name FROM user_tables;
   ALTER TABLE "GAST" ADD FOREIGN KEY ("REISEPASSID")
 	  REFERENCES "REISEPASS" ("REISEPASSID") ENABLE;
 
-  ALTER TABLE "GAST" ADD FOREIGN KEY ("KONTONR")
-	  REFERENCES "BANKINFORMATION" ("KONTONR") ENABLE;
+  ALTER TABLE "GAST" ADD FOREIGN KEY ("IBAN")
+	  REFERENCES "BANKINFORMATION" ("IBAN") ENABLE;
 
 
 --------------------------------------------------------
@@ -576,8 +550,8 @@ SELECT table_name FROM user_tables;
   ALTER TABLE "LIEFERANTEN" ADD FOREIGN KEY ("ADRESSID")
 	  REFERENCES "ADRESSE" ("ADRESSID") ENABLE;
 
-  ALTER TABLE "LIEFERANTEN" ADD FOREIGN KEY ("KONTONR")
-	  REFERENCES "BANKINFORMATION" ("KONTONR") ENABLE;
+  ALTER TABLE "LIEFERANTEN" ADD FOREIGN KEY ("IBAN")
+	  REFERENCES "BANKINFORMATION" ("IBAN") ENABLE;
 
 
 --------------------------------------------------------
