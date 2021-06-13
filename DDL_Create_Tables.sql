@@ -49,7 +49,8 @@ CREATE TABLE Service(
 -------------------------------
 CREATE TABLE Zimmer(
 	ZimmerNr NUMBER NOT NULL,
-	ZimmerklassenBeschriebung VARCHAR(250) NOT NULL
+	ZimmerArt VARCHAR2(225) NOT NULL,
+	Einzelpreis NUMBER(7,2) NOT NULL
 );
 
 
