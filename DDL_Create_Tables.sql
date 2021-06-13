@@ -68,7 +68,7 @@ CREATE TABLE Land(
 --  DDL table for Reisepass
 -------------------------------
 CREATE TABLE Reisepass(
-	ReisepassID NUMBER NOT NULL,
+	ReisepassID VARCHAR(20) NOT NULL,
 	LandID NUMBER NOT NULL
 );
 
@@ -131,7 +131,7 @@ CREATE TABLE Personal(
 -------------------------------------
 CREATE TABLE Gast(
 	PersonID NUMBER NOT NULL,	
-	ReisepassID NUMBER NOT NULL,	
+	ReisepassID VARCHAR(20) NOT NULL,	
 	IBAN VARCHAR(250) NOT NULL
 );
 
