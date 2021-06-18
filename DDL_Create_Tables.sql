@@ -155,9 +155,9 @@ CREATE TABLE Rechnung(
 	RechnungsSumme NUMBER(7,2) NOT NULL,	
 	Ausstellungsdatum DATE NOT NULL,	
 	Austeller VARCHAR2(255) NOT NULL,	
-	AustellerKontoNr VARCHAR2(255) NOT NULL,
+	AustellerIBAN VARCHAR2(255) NOT NULL,
 	Empfaenger VARCHAR2(255) NOT NULL,
-	EmpfaengerKontoNr VARCHAR2(255) NOT NULL		
+	EmpfaengerIBAN VARCHAR2(255) NOT NULL		
 );
 
 
@@ -168,8 +168,7 @@ CREATE TABLE Bestellung(
 	BestellungsID NUMBER NOT NULL,	
 	LieferantenID NUMBER NOT NULL,	
 	AdressID NUMBER NOT NULL,		
-  RechnungsID NUMBER NOT NULL,
-  Bestellungspreis NUMBER(7,2) NOT NULL	
+  RechnungsID NUMBER NOT NULL
 );
 
 
@@ -552,6 +551,17 @@ SELECT table_name FROM user_tables;
 	  REFERENCES "ADRESSE" ("ADRESSID") ENABLE;
 
   ALTER TABLE "LIEFERANTEN" ADD FOREIGN KEY ("IBAN")
+	  REFERENCES "BANKINFORMATION" ("IBAN") ENABLE;
+
+
+--------------------------------------------------------
+--  REF CONSTRAINTS FOR TABLE RECHNUNG  
+--------------------------------------------------------
+
+  ALTER TABLE "RECHNUNG" ADD FOREIGN KEY ("AUSTELLERIBAN")
+	  REFERENCES "BANKINFORMATION" ("IBAN") ENABLE;
+
+  ALTER TABLE "RECHNUNG" ADD FOREIGN KEY ("EMPFAENGERIBAN")
 	  REFERENCES "BANKINFORMATION" ("IBAN") ENABLE;
 
 
