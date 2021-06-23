@@ -108,6 +108,7 @@ CREATE TABLE Person(
 --  DDL table for Bankinformation
 -------------------------------------
 CREATE TABLE Bankinformation(
+	KontoID NUMBER NOT NULL,
 	KontoNr NUMBER NOT NULL,
 	IBAN VARCHAR2(255) NOT NULL,
 	Bankname VARCHAR2(255) NOT NULL,	
@@ -154,10 +155,8 @@ CREATE TABLE Rechnung(
 	RechnungsID NUMBER NOT NULL,	
 	RechnungsSumme NUMBER(7,2) NOT NULL,	
 	Ausstellungsdatum DATE NOT NULL,	
-	Austeller VARCHAR2(255) NOT NULL,	
-	AustellerIBAN VARCHAR2(255) NOT NULL,
-	Empfaenger VARCHAR2(255) NOT NULL,
-	EmpfaengerIBAN VARCHAR2(255) NOT NULL		
+	AusstellerKontoID NUMBER NOT NULL,
+	EmpfaengerKontoID NUMBER NOT NULL		
 );
 
 
@@ -308,7 +307,7 @@ SELECT table_name FROM user_tables;
 --  DDL FOR INDEX SYS_C0040316
 --------------------------------------------------------
 
-  CREATE UNIQUE INDEX "SYS_C0012356" ON "BANKINFORMATION" ("IBAN") 
+  CREATE UNIQUE INDEX "SYS_C0012356" ON "BANKINFORMATION" ("KONTOID") 
   ;
 --------------------------------------------------------
 --  DDL FOR INDEX SYS_C0040352
@@ -430,7 +429,7 @@ SELECT table_name FROM user_tables;
 --------------------------------------------------------
 --  CONSTRAINTS FOR TABLE BANKINFORMATION  
 --------------------------------------------------------
-   ALTER TABLE "BANKINFORMATION" ADD PRIMARY KEY ("IBAN") ENABLE;
+   ALTER TABLE "BANKINFORMATION" ADD PRIMARY KEY ("KONTOID") ENABLE;
 
 
 --------------------------------------------------------
@@ -558,11 +557,11 @@ SELECT table_name FROM user_tables;
 --  REF CONSTRAINTS FOR TABLE RECHNUNG  
 --------------------------------------------------------
 
-  ALTER TABLE "RECHNUNG" ADD FOREIGN KEY ("AUSTELLERIBAN")
-	  REFERENCES "BANKINFORMATION" ("IBAN") ENABLE;
+  ALTER TABLE "RECHNUNG" ADD FOREIGN KEY ("AUSTELLERKONTOID")
+	  REFERENCES "BANKINFORMATION" ("KONTOID") ENABLE;
 
-  ALTER TABLE "RECHNUNG" ADD FOREIGN KEY ("EMPFAENGERIBAN")
-	  REFERENCES "BANKINFORMATION" ("IBAN") ENABLE;
+  ALTER TABLE "RECHNUNG" ADD FOREIGN KEY ("EMPFAENGERKONTOID")
+	  REFERENCES "BANKINFORMATION" ("KONTOID") ENABLE;
 
 
 --------------------------------------------------------
