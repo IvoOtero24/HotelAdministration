@@ -229,7 +229,7 @@ INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (102,'Empfang');
 INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (103,'Marketing');
 INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (104,'Personal');
 INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (105,'Housekeeping');
-INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (106,'K�che');
+INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (106,'Küche');
 
 
 
@@ -497,6 +497,115 @@ INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
 
 INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
 	VALUES (309, 103, 9, 224);
+
+------------------------------
+--  INSERT for Zimmerbuchung
+------------------------------
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (1,TO_DATE('12/01/2018','DD/MM/YYYY'),10,300,150);
+
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (2,TO_DATE('12/05/2018','DD/MM/YYYY'),11,301,280);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (3,TO_DATE('22/01/2018','DD/MM/YYYY'),12,302,750);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (4,TO_DATE('08/01/2018','DD/MM/YYYY'),13,303,150);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (5,TO_DATE('15/01/2020','DD/MM/YYYY'),14,304,2500);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (6,TO_DATE('13/07/2018','DD/MM/YYYY'),15,305,890);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (7,TO_DATE('30/11/2019','DD/MM/YYYY'),16,306,250);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (8,TO_DATE('22/03/2019','DD/MM/YYYY'),17,307,340);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (9,TO_DATE('12/05/2018','DD/MM/YYYY'),18,308,770);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (10,TO_DATE('12/01/2018','DD/MM/YYYY'),19,309,860);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (11,TO_DATE('14/01/2020','DD/MM/YYYY'),20,310,80);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (12,TO_DATE('18/06/2016','DD/MM/YYYY'),21,311,3500);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (13,TO_DATE('19/07/2017','DD/MM/YYYY'),22,312,1500);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (14,TO_DATE('17/10/2018','DD/MM/YYYY'),23,313,650);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (15,TO_DATE('12/01/2021','DD/MM/YYYY'),24,314,450);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (16,TO_DATE('24/07/2019','DD/MM/YYYY'),25,315,890);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (17,TO_DATE('17/09/2019','DD/MM/YYYY'),26,316,1200);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (18,TO_DATE('18/11/2020','DD/MM/YYYY'),27,317,2300);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (19,TO_DATE('19/06/2021','DD/MM/YYYY'),28,318,650);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (20,TO_DATE('28/01/2020','DD/MM/YYYY'),29,319,80);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (21,TO_DATE('15/12/2019','DD/MM/YYYY'),30,320,354);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (22,TO_DATE('21/03/2020','DD/MM/YYYY'),31,321,222);
+
+
+-------------------------------------
+--  INSERT for Zimmerbuchungsdetails
+-------------------------------------
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (1,1,2,1,100);
+
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (17,2,5,1,250);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (1,3,3,1,450);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (3,4,2,1,100);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (13,5,5,1,2250);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (10,6,2,1,700);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (18,7,1,1,180);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (21,8,6,1,300);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (6,9,4,1,560);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (5,10,7,1,686);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (1,11,1,1,50);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (19,12,7,2,3150);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (25,13,6,2,1176);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (18,14,3,1,540);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (19,15,1,1,450);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (27,16,5,1,700);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (7,17,7,1,980);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (10,18,3,2,2100);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (8,19,4,1,560);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (16,20,1,1,50);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (12,21,3,1,294);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (15,22,4,1,200);
+
+
+------------------------------
+--  INSERT for Servicedetails
+------------------------------
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (1,3,1,50);
+
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (2,8,1,30);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (3,11,2,300);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (4,11,1,150);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (5,3,5,250);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (6,15,19,190);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (7,9,7,70);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (8,5,1,40);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (9,3,4,210);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (10,8,2,60);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (11,8,1,30);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (12,11,3,450);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (13,3,6,300);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (14,15,11,110);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (16,8,6,180);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (17,4,11,220);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (18,12,4,200);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (19,3,2,100);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (20,8,1,30);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (21,8,2,60);
+INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (22,4,1,20);
+
+
+------------------------------
+--  INSERT for Bestelldetails
+------------------------------
+INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (301,3,10,20);
+
+INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (302,3,10,20);
+INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (303,13,100,100);
+INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (303,26,30,60);
+INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (304,23,5,500);
+INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (305,8,4,120);
+INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (306,17,10,500);
+INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (307,11,250,250);
+INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (308,25,15,75);
+INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (309,5,17,340);
+
+
+--------------------------------
+--  INSERT for Kundenbewertung
+--------------------------------
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID) VALUES (11,1,'Komischer Geruch aber sonst super',2);
+
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID) VALUES (24,2,'Genialer Service! Gerne wieder!',15);
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID) VALUES (28,3,'Hat mir sehr gut gefallen',19);
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID) VALUES (18,4,'Personal freundlich und Zimmer sauber, was will man mehr?',9);
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID) VALUES (30,5,'Für den Preis unschlagbar, freue mich schon auf das nächste Jahr!',21);
 
 
 commit;
