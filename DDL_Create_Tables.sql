@@ -212,12 +212,10 @@ CREATE TABLE Servicedetails(
 -------------------------------------
 CREATE TABLE Zimmerbuchungsdetails(
 	ZimmerNr NUMBER NOT NULL,	
-	BuchungsID NUMBER NOT NULL,
-	CheckIn DATE NOT NULL,
-	CheckOut DATE NOT NULL,	
+	BuchungsID NUMBER NOT NULL,	
 	DauerTagen NUMBER NOT NULL, 
 	Anzahl NUMBER NOT NULL,		
-  	Preis NUMBER(7,2) NOT NULL	
+  Preis NUMBER(7,2) NOT NULL	
 );
 
 
@@ -228,8 +226,7 @@ CREATE TABLE Kundenbewertung(
 	PersonID NUMBER NOT NULL,	
 	BewertungsID NUMBER NOT NULL, 
 	Bewertungskommentar VARCHAR2(250) NOT NULL,			
-	BuchungsID NUMBER NOT NULL,	
-	Bewertung INT NOT NULL
+  BuchungsID NUMBER NOT NULL	
 );
 
 
