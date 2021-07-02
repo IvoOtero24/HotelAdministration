@@ -232,7 +232,7 @@ INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (102,'Empfang');
 INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (103,'Marketing');
 INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (104,'Personal');
 INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (105,'Housekeeping');
-INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (106,'Küche');
+INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (106,'KÃ¼che');
 
 
 
@@ -502,45 +502,7 @@ INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
 	VALUES (309, 103, 9, 224);
 	
 		
--------------------------------------
---  INSERT for Zimmerbuchungsdetails
--------------------------------------
 
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (1,1,TO_DATE('12/01/2019','DD/MM/YYYY'),TO_DATE('14/01/2019','DD/MM/YYYY'),2,1,100);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (17,2,TO_DATE('12/06/2018','DD/MM/YYYY'),TO_DATE('17/06/2018','DD/MM/YYYY'),5,1,250);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (1,3,TO_DATE('15/08/2018','DD/MM/YYYY'),TO_DATE('18/08/2018','DD/MM/YYYY'),3,1,450);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (3,4,TO_DATE('12/01/2018','DD/MM/YYYY'),TO_DATE('14/01/2018','DD/MM/YYYY'),2,1,100);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (13,5,TO_DATE('07/05/2020','DD/MM/YYYY'),TO_DATE('12/05/2020','DD/MM/YYYY'),5,1,2250);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (10,6,TO_DATE('05/08/2018','DD/MM/YYYY'),TO_DATE('14/08/2018','DD/MM/YYYY'),2,1,700);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (18,7,TO_DATE('17/01/2020','DD/MM/YYYY'),TO_DATE('18/01/2020','DD/MM/YYYY'),1,1,180);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (21,8,TO_DATE('22/03/2019','DD/MM/YYYY'),TO_DATE('28/03/2019','DD/MM/YYYY'),6,1,300);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (6,9,TO_DATE('12/05/2018','DD/MM/YYYY'),TO_DATE('16/05/2018','DD/MM/YYYY'),4,1,560);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (5,10,TO_DATE('15/09/2018','DD/MM/YYYY'),TO_DATE('22/09/2018','DD/MM/YYYY'),7,1,686);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (1,11,TO_DATE('20/08/2020','DD/MM/YYYY'),TO_DATE('23/08/2020','DD/MM/YYYY'),1,1,50);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (19,12,TO_DATE('22/06/2016','DD/MM/YYYY'),TO_DATE('29/06/2016','DD/MM/YYYY'),7,2,3150);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (25,13,TO_DATE('14/11/2017','DD/MM/YYYY'),TO_DATE('20/11/2017','DD/MM/YYYY'),6,2,1176);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (18,14,TO_DATE('18/10/2018','DD/MM/YYYY'),TO_DATE('21/10/2018','DD/MM/YYYY'),3,1,540);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (19,15,TO_DATE('19/05/2021','DD/MM/YYYY'),TO_DATE('20/05/2021','DD/MM/YYYY'),1,1,450);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (27,16,TO_DATE('18/08/2019','DD/MM/YYYY'),TO_DATE('23/08/2019','DD/MM/YYYY'),5,1,700);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (7,17,TO_DATE('13/01/2020','DD/MM/YYYY'),TO_DATE('20/01/2020','DD/MM/YYYY'),7,1,980);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (10,18,TO_DATE('23/11/2020','DD/MM/YYYY'),TO_DATE('26/11/2020','DD/MM/YYYY'),3,2,2100);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (8,19,TO_DATE('21/06/2021','DD/MM/YYYY'),TO_DATE('25/06/2021','DD/MM/YYYY'),4,1,560);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (16,20,TO_DATE('30/03/2020','DD/MM/YYYY'),TO_DATE('31/03/2020','DD/MM/YYYY'),1,1,50);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (12,21,TO_DATE('16/12/2019','DD/MM/YYYY'),TO_DATE('19/12/2019','DD/MM/YYYY'),3,1,294);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (15,22,TO_DATE('03/07/2020','DD/MM/YYYY'),TO_DATE('07/07/2020','DD/MM/YYYY'),4,1,200);
-
-
-
-
---------------------------------
---  INSERT for Kundenbewertung
---------------------------------
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (11,1,'Komischer Geruch aber sonst super',2,8);
-
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (24,2,'Genialer Service! Gerne wieder!',15,10);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (28,3,'Hat mir sehr gut gefallen',19,8);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (18,4,'Personal freundlich und Zimmer sauber, was will man mehr?',9,9);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (30,5,'Für den Preis unschlagbar, freue mich schon auf das nächste Jahr!',21,10);	
 
 
 ------------------------------
@@ -574,29 +536,30 @@ INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchung
 -------------------------------------
 --  INSERT for Zimmerbuchungsdetails
 -------------------------------------
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (1,1,2,1,100);
 
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (17,2,5,1,250);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (1,3,3,1,450);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (3,4,2,1,100);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (13,5,5,1,2250);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (10,6,2,1,700);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (18,7,1,1,180);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (21,8,6,1,300);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (6,9,4,1,560);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (5,10,7,1,686);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (1,11,1,1,50);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (19,12,7,2,3150);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (25,13,6,2,1176);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (18,14,3,1,540);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (19,15,1,1,450);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (27,16,5,1,700);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (7,17,7,1,980);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (10,18,3,2,2100);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (8,19,4,1,560);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (16,20,1,1,50);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (12,21,3,1,294);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,DauerTagen,Anzahl,Preis) VALUES (15,22,4,1,200);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (1,1,TO_DATE('12/01/2019','DD/MM/YYYY'),TO_DATE('14/01/2019','DD/MM/YYYY'),2,1,100);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (17,2,TO_DATE('12/06/2018','DD/MM/YYYY'),TO_DATE('17/06/2018','DD/MM/YYYY'),5,1,250);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (1,3,TO_DATE('15/08/2018','DD/MM/YYYY'),TO_DATE('18/08/2018','DD/MM/YYYY'),3,1,450);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (3,4,TO_DATE('12/01/2018','DD/MM/YYYY'),TO_DATE('14/01/2018','DD/MM/YYYY'),2,1,100);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (13,5,TO_DATE('07/05/2020','DD/MM/YYYY'),TO_DATE('12/05/2020','DD/MM/YYYY'),5,1,2250);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (10,6,TO_DATE('05/08/2018','DD/MM/YYYY'),TO_DATE('14/08/2018','DD/MM/YYYY'),2,1,700);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (18,7,TO_DATE('17/01/2020','DD/MM/YYYY'),TO_DATE('18/01/2020','DD/MM/YYYY'),1,1,180);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (21,8,TO_DATE('22/03/2019','DD/MM/YYYY'),TO_DATE('28/03/2019','DD/MM/YYYY'),6,1,300);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (6,9,TO_DATE('12/05/2018','DD/MM/YYYY'),TO_DATE('16/05/2018','DD/MM/YYYY'),4,1,560);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (5,10,TO_DATE('15/09/2018','DD/MM/YYYY'),TO_DATE('22/09/2018','DD/MM/YYYY'),7,1,686);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (1,11,TO_DATE('20/08/2020','DD/MM/YYYY'),TO_DATE('23/08/2020','DD/MM/YYYY'),1,1,50);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (19,12,TO_DATE('22/06/2016','DD/MM/YYYY'),TO_DATE('29/06/2016','DD/MM/YYYY'),7,2,3150);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (25,13,TO_DATE('14/11/2017','DD/MM/YYYY'),TO_DATE('20/11/2017','DD/MM/YYYY'),6,2,1176);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (18,14,TO_DATE('18/10/2018','DD/MM/YYYY'),TO_DATE('21/10/2018','DD/MM/YYYY'),3,1,540);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (19,15,TO_DATE('19/05/2021','DD/MM/YYYY'),TO_DATE('20/05/2021','DD/MM/YYYY'),1,1,450);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (27,16,TO_DATE('18/08/2019','DD/MM/YYYY'),TO_DATE('23/08/2019','DD/MM/YYYY'),5,1,700);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (7,17,TO_DATE('13/01/2020','DD/MM/YYYY'),TO_DATE('20/01/2020','DD/MM/YYYY'),7,1,980);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (10,18,TO_DATE('23/11/2020','DD/MM/YYYY'),TO_DATE('26/11/2020','DD/MM/YYYY'),3,2,2100);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (8,19,TO_DATE('21/06/2021','DD/MM/YYYY'),TO_DATE('25/06/2021','DD/MM/YYYY'),4,1,560);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (16,20,TO_DATE('30/03/2020','DD/MM/YYYY'),TO_DATE('31/03/2020','DD/MM/YYYY'),1,1,50);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (12,21,TO_DATE('16/12/2019','DD/MM/YYYY'),TO_DATE('19/12/2019','DD/MM/YYYY'),3,1,294);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (15,22,TO_DATE('03/07/2020','DD/MM/YYYY'),TO_DATE('07/07/2020','DD/MM/YYYY'),4,1,200);
+
 
 
 ------------------------------
@@ -645,11 +608,12 @@ INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (309,5,17
 --------------------------------
 --  INSERT for Kundenbewertung
 --------------------------------
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID) VALUES (11,1,'Komischer Geruch aber sonst super',2);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID) VALUES (24,2,'Genialer Service! Gerne wieder!',15);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID) VALUES (28,3,'Hat mir sehr gut gefallen',19);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID) VALUES (18,4,'Personal freundlich und Zimmer sauber, was will man mehr?',9);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID) VALUES (30,5,'F�r den Preis unschlagbar, freue mich schon auf das n�chste Jahr!',21);
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (11,1,'Komischer Geruch aber sonst super',2,8);
+
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (24,2,'Genialer Service! Gerne wieder!',15,10);
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (28,3,'Hat mir sehr gut gefallen',19,8);
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (18,4,'Personal freundlich und Zimmer sauber, was will man mehr?',9,9);
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (30,5,'FÃ¼r den Preis unschlagbar, freue mich schon auf das nÃ¤chste Jahr!',21,10);	
 
 
 commit;
