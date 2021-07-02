@@ -214,7 +214,7 @@ CREATE TABLE Zimmerbuchungsdetails(
 	ZimmerNr NUMBER NOT NULL,	
 	BuchungsID NUMBER NOT NULL,
 	CheckIn DATE NOT NULL,
-	CeckOut DATE NOT NULL,
+	CheckOut DATE NOT NULL,
 	DauerTagen NUMBER NOT NULL, 
 	Anzahl NUMBER NOT NULL,		
   Preis NUMBER(7,2) NOT NULL	
