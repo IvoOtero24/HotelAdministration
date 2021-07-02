@@ -228,7 +228,8 @@ CREATE TABLE Kundenbewertung(
 	PersonID NUMBER NOT NULL,	
 	BewertungsID NUMBER NOT NULL, 
 	Bewertungskommentar VARCHAR2(250) NOT NULL,			
-  BuchungsID NUMBER NOT NULL	
+  	BuchungsID NUMBER NOT NULL,
+	Bewertung NUMBER NOT NULL
 );
 
 
