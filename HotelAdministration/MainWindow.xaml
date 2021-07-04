@@ -1,0 +1,72 @@
+﻿<Window x:Class="HotelAdministration.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelAdministration"
+        mc:Ignorable="d"
+        DataContext="{Binding Main, Source={StaticResource Locator}}"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Window.Resources>
+        <Style x:Key="StyledButton" TargetType="Button">
+            <Setter Property="Background" Value="#ead9fa" />
+            <Setter Property="BorderBrush" Value="LightGray" />
+            <Setter Property="BorderThickness" Value="0.5" />
+            <Setter Property="Width" Value="75" />
+            <Setter Property="Height" Value="25" />
+            <Setter Property="FontFamily" Value="The Hand" />
+            <Setter Property="Foreground" Value="DimGray" />
+        </Style>
+    </Window.Resources>
+
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2">
+            <Label Content="Hotel Administration Central" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" />
+            <Border BorderThickness="0,0,0,4" BorderBrush="#ead9fa">
+                <TextBlock
+                    Text="Choose one of the following actions below to manage your hotel's data: "
+                    HorizontalAlignment="Center" Margin="0,0,0,5" />
+            </Border>
+        </StackPanel>
+
+        <!-- List of all actions -->
+        <StackPanel HorizontalAlignment="Center" Orientation="Vertical" Margin="0,30,0,0" Grid.Row="1" Grid.Column="0" VerticalAlignment="Top">
+            <Button Content="Add to list" Command="{Binding }"
+                    HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
+            <Button Content="Add to list" Command="{Binding }"
+                    HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
+            <Button Content="Add to list" Command="{Binding }"
+                    HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
+            <Button Content="Add to list" Command="{Binding }"
+                    HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
+            <Button Content="Add to list" Command="{Binding }"
+                    HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
+        </StackPanel>
+
+
+        <!-- Placeholder for different views -->
+        <Border Grid.Row="1" Grid.Column="1" Margin="5" BorderBrush="#ead9fa" BorderThickness="2" CornerRadius="3">
+        
+        </Border>
+
+
+
+
+
+    </Grid>
+
+</Window>
