@@ -5,7 +5,7 @@ INSERT INTO WarenArt (WarenArtID,WarenArtName) VALUES (1,'Toilettenartikel');
 INSERT INTO WarenArt (WarenArtID,WarenArtName) VALUES (2,'Zimmerartikel');
 INSERT INTO WarenArt (WarenArtID,WarenArtName) VALUES (3, 'Waschraumartikel');
 INSERT INTO WarenArt (WarenArtID,WarenArtName) VALUES (4,'Restaurantartikel');
-INSERT INTO WarenArt (WarenArtID,WarenArtName) VALUES (5,'Ger?te');
+INSERT INTO WarenArt (WarenArtID,WarenArtName) VALUES (5,'Geraete');
 
 -----------------------------
 --  INSERT for Ware
