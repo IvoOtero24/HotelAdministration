@@ -155,8 +155,8 @@ CREATE TABLE Rechnung(
 	RechnungsID NUMBER NOT NULL,	
 	RechnungsSumme NUMBER(7,2) NOT NULL,	
 	Ausstellungsdatum DATE NOT NULL,	
-	AusstellerKontoID NUMBER NOT NULL,
-	EmpfaengerKontoID NUMBER NOT NULL		
+	EmpfaengerKontoID NUMBER NOT NULL,
+	AusstellerKontoID NUMBER NOT NULL		
 );
 
 
