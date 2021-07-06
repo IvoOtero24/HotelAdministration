@@ -509,7 +509,7 @@ INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
 ------------------------------
 --  INSERT for Zimmerbuchung
 ------------------------------
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (1,TO_DATE('12/01/2018','DD/MM/YYYY'),10,300,150);
+INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (1,TO_DATE('12/01/2018','DD/MM/YYYY'),10,204,150);
 
 INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (2,TO_DATE('12/05/2018','DD/MM/YYYY'),11,301,280);
 INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (3,TO_DATE('22/01/2018','DD/MM/YYYY'),12,302,750);
@@ -594,7 +594,6 @@ INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (22,4,1,20
 --  INSERT for Bestelldetails
 ------------------------------
 INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (301,3,10,20);
-
 INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (302,3,10,20);
 INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (303,13,100,100);
 INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (303,26,30,60);
@@ -610,7 +609,6 @@ INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (309,5,17
 --  INSERT for Kundenbewertung
 --------------------------------
 INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (11,1,'Komischer Geruch aber sonst super',2,8);
-
 INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (24,2,'Genialer Service! Gerne wieder!',15,10);
 INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (28,3,'Hat mir sehr gut gefallen',19,8);
 INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (18,4,'Personal freundlich und Zimmer sauber, was will man mehr?',9,9);
