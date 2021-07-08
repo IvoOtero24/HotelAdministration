@@ -7,6 +7,43 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Gästeübersicht" FontSize="22" VerticalAlignment="Center" Margin="10"/>
+
+        <!-- Filer-->
+        <StackPanel Grid.Row="1">
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Filter: " FontSize="17" VerticalAlignment="Top" Margin="10"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Gesamtanzahl an Gäste: "/>
+                <TextBlock Text="{Binding}"/>
+                <Button Content="Loyale Gäste" Margin="10,0"/>
+                <Label Content="Sortieren nach: " Margin="8,0" />
+                <ComboBox Width="80">
+                    <ComboBoxItem Name="a">Buchungsdatum</ComboBoxItem>
+                    <ComboBoxItem Name="b">Check-In Datum</ComboBoxItem>
+                    <ComboBoxItem Name="c">Check-Out Datum</ComboBoxItem>
+                    <ComboBoxItem Name="d">Buchungspreis</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <!-- Mitarbeiterübersicht -->
+            <TextBlock Text="Liste aller Gäste (nach letztes Buchungsdatum sortiert): " Margin="10,12" FontSize="17"/>
+            <DataGrid AlternatingRowBackground="Lavender" Margin="5">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Vorname" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Nachname" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Alter" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Nationalität" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Datum letzer Buchung" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Anzahl Buchungen" Binding="{Binding}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </StackPanel>
     </Grid>
 </UserControl>

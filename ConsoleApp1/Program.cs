@@ -10,7 +10,7 @@ namespace ConsoleApp1
         {
             builder.UserID = "s21bwi4_wi19b080";
             builder.Password = "00992412Ivo";
-
+            
             using OracleConnection connection = new OracleConnection(builder.ToString());
             connection.Open();
 

@@ -15,12 +15,39 @@
         <!-- Title -->
         <TextBlock Grid.Row="0" Grid.Column="0" Text="Mitarbeiterübersicht" FontSize="22" VerticalAlignment="Center" Margin="10"/>
 
-        <!-- Add Mitarbeiter -->
-        <TextBlock Grid.Row="1" Grid.Column="0" Text="Neuen mitarbeiter einfügen" FontSize="17" VerticalAlignment="Top" Margin="10"/>
-        <StackPanel Grid.Row="1" Orientation="Horizontal">
+        <!-- Filer-->
+        <StackPanel Grid.Row="1">
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Filtering: " FontSize="17" VerticalAlignment="Top" Margin="10"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Schlechte Bewertungen anzeigen!" Margin="25,0"/>
+                <Label Content="Filter nach Bewertungskala: " Margin="8,0" />
+                <ComboBox Width="80">
+                    <ComboBoxItem Name="a">1</ComboBoxItem>
+                    <ComboBoxItem Name="b">2</ComboBoxItem>
+                    <ComboBoxItem Name="c">3</ComboBoxItem>
+                    <ComboBoxItem Name="d">4</ComboBoxItem>
+                    <ComboBoxItem Name="e">5</ComboBoxItem>
+                    <ComboBoxItem Name="f">6</ComboBoxItem>
+                    <ComboBoxItem Name="g">7</ComboBoxItem>
+                    <ComboBoxItem Name="h">8</ComboBoxItem>
+                    <ComboBoxItem Name="i">9</ComboBoxItem>
+                    <ComboBoxItem Name="j">10</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
             
+            <!-- Mitarbeiterübersicht -->
+            <TextBlock Text="Liste aller Bewertungen: " Margin="10,12" FontSize="17"/>
+            <DataGrid AlternatingRowBackground="Lavender" Margin="5">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Bewertung" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Kommentar" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Gast (Vor- und Nachname" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Check-In Datum" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Check-Out Datum" Binding="{Binding}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
         </StackPanel>
 
-
-</Grid>
+    </Grid>
 </UserControl>

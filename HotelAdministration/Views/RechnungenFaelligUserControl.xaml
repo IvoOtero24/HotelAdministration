@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="HotelAdministration.Views.RechnungenFaelligUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HotelAdministration.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Fällige Rechnungen" FontSize="22" VerticalAlignment="Center" Margin="10"/>
+            <TextBlock Text="Übersicht/Liste aller Rechnungen, die in dem kommenden Tagen fällig sind!"/>
+        </StackPanel>
+
+        <!-- Filer-->
+        <StackPanel Grid.Row="1">
+            <DataGrid AlternatingRowBackground="Lavender" Margin="5">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="RechnungsID" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Summe" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Ausstellungsdatum" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="AustellerKontoID" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="EmpfängerKontoID" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Fälligkeitsdatum" Binding="{Binding}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</UserControl>

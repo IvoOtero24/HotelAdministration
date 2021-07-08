@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotelAdministration"
+        xmlns:vm="clr-namespace:HotelAdministration.ViewModel"
+        xmlns:views="clr-namespace:HotelAdministration.Views"
         mc:Ignorable="d"
         DataContext="{Binding Main, Source={StaticResource Locator}}"
         Title="MainWindow" Height="450" Width="800">
@@ -13,7 +15,7 @@
             <Setter Property="Background" Value="#ead9fa" />
             <Setter Property="BorderBrush" Value="LightGray" />
             <Setter Property="BorderThickness" Value="0.5" />
-            <Setter Property="Width" Value="75" />
+            <Setter Property="Width" Value="110" />
             <Setter Property="Height" Value="25" />
             <Setter Property="FontFamily" Value="The Hand" />
             <Setter Property="Foreground" Value="DimGray" />
@@ -38,29 +40,47 @@
             <Label Content="Hotel Administration Central" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" />
             <Border BorderThickness="0,0,0,4" BorderBrush="#ead9fa">
                 <TextBlock
-                    Text="Choose one of the following actions below to manage your hotel's data: "
+                    Text="Bitte wählen sie einer der folgenden Übersichten, um ihre Hotel-Datenbank zu verwalten: "
                     HorizontalAlignment="Center" Margin="0,0,0,5" />
             </Border>
         </StackPanel>
 
         <!-- List of all actions -->
         <StackPanel HorizontalAlignment="Center" Orientation="Vertical" Margin="0,30,0,0" Grid.Row="1" Grid.Column="0" VerticalAlignment="Top">
-            <Button Content="Add to list" Command="{Binding }"
+            <Button Content="Mitarbeiterübersicht" Command="{Binding SwitchToMitarbeiterViewCommand}"
                     HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
-            <Button Content="Add to list" Command="{Binding }"
+            <Button Content="Bewertungen" Command="{Binding SwitchToBewertungenViewCommand}"
                     HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
-            <Button Content="Add to list" Command="{Binding }"
+            <Button Content="Buchungen" Command="{Binding SwitchToBuchungenViewCommand}"
                     HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
-            <Button Content="Add to list" Command="{Binding }"
+            <Button Content="Gastübersicht" Command="{Binding SwitchToGastViewCommand}"
                     HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
-            <Button Content="Add to list" Command="{Binding }"
+            <Button Content="Fällige Rechnungen" Command="{Binding SwitchToRechnungViewCommand}"
                     HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
         </StackPanel>
 
 
         <!-- Placeholder for different views -->
         <Border Grid.Row="1" Grid.Column="1" Margin="5" BorderBrush="#ead9fa" BorderThickness="2" CornerRadius="3">
-        
+            <ContentControl Content="{Binding CurrentView}">
+                <ContentControl.Resources>
+                    <DataTemplate DataType="{x:Type vm:AddMitarbeiterViewModel}">
+                        <views:AddMitarbeiterUserControl/>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type vm:BewertungenViewModel}">
+                        <views:BewertungenUserControl/>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type vm:BuchungsübersichtViewModel}">
+                        <views:BuchungsübersichtUserControl/>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type vm:GastübersichtViewModel}">
+                        <views:GastUebersichtUserControl/>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type vm:RechnungenViewModel}">
+                        <views:RechnungenFaelligUserControl/>
+                    </DataTemplate>
+                </ContentControl.Resources>
+            </ContentControl>
         </Border>
 
 

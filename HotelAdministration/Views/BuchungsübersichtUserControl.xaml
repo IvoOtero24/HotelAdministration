@@ -7,6 +7,41 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Buchungsübersicht" FontSize="22" VerticalAlignment="Center" Margin="10"/>
+
+        <!-- Filer-->
+        <StackPanel Grid.Row="1">
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Filter: " FontSize="17" VerticalAlignment="Top" Margin="10"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Sortieren nach: " Margin="8,0" />
+                <ComboBox Width="80">
+                    <ComboBoxItem Name="a">Buchungsdatum</ComboBoxItem>
+                    <ComboBoxItem Name="b">Check-In Datum</ComboBoxItem>
+                    <ComboBoxItem Name="c">Check-Out Datum</ComboBoxItem>
+                    <ComboBoxItem Name="d">Buchungspreis</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <!-- Mitarbeiterübersicht -->
+            <TextBlock Text="Liste aller Buchungen (nach Datum sortiert): " Margin="10,12" FontSize="17"/>
+            <DataGrid AlternatingRowBackground="Lavender" Margin="5">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Buchungsdatum" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Gast" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Buchungspreis" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Check-In Datum" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Check-Out Datum" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Zimmerart" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Zimmer Nr." Binding="{Binding}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </StackPanel>
     </Grid>
 </UserControl>

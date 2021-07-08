@@ -7,6 +7,50 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
-    </Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Mitarbeiterübersicht" FontSize="22" VerticalAlignment="Center" Margin="10"/>
+
+        <!-- Add Mitarbeiter -->
+        <StackPanel Grid.Row="1">
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Neuen mitarbeiter einfügen: " FontSize="17" VerticalAlignment="Top" Margin="10"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Vorname: " /> <TextBox Width="80" />
+                <Label Content="Nachname: " Margin="5,0,0,0"/> <TextBox Width="80" />
+                <Label Content="Geburtsdatum: " Margin="5,0,0,0"/> <DatePicker/>
+                <Label Content="SVN" Margin="5,0,0,0"/> <TextBox Width="60" />
+                <Label Content="Gehalt:" Margin="5,0,0,0"/> <TextBox Width="75" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5" HorizontalAlignment="Center">
+                <Label Content="Strasse: " /><TextBox Width="100" />
+                <Label Content="Hausnr: " Margin="5,0,0,0"/><TextBox Width="40" />
+                <Label Content="Tür Nr: " Margin="5,0,0,0"/> <TextBox Width="40"/>
+                <Label Content="PLZ" Margin="5,0,0,0"/><TextBox Width="60" />
+                <Label Content="Ort:" Margin="5,0,0,0"/><TextBox Width="75" />
+                <Label Content="Land:" Margin="5,0,0,0"/><TextBox Width="75" />
+            </StackPanel>
+
+        <!-- Mitarbeiterübersicht -->
+        <TextBlock Text="Liste aller Mitarbeiter: " Margin="10,12" FontSize="17"/>
+        <DataGrid AlternatingRowBackground="Lavender" Margin="5">
+            <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Geb. Datum" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="SVN" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Gehalt" Binding="{Binding}"/>
+                    <DataGridTextColumn Header="Addresse" Binding="{Binding}"/>
+                    <DataGridTemplateColumn Header="Mitarbeiter llöschen?">
+                    </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        </StackPanel>
+
+
+
+</Grid>
 </UserControl>

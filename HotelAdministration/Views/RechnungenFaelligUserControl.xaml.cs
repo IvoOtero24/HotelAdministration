@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace HotelAdministration.Views
 {
     /// <summary>
-    /// Interaktionslogik für BewertungenUserControl.xaml
+    /// Interaktionslogik für RechnungenFaelligUserControl.xaml
     /// </summary>
-    public partial class BewertungenUserControl : UserControl
+    public partial class RechnungenFaelligUserControl : UserControl
     {
-        public BewertungenUserControl()
+        public RechnungenFaelligUserControl()
         {
             InitializeComponent();
-        }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }
