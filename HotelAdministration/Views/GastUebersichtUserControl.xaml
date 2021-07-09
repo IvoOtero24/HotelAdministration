@@ -5,7 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:HotelAdministration.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             DataContext="{Binding Gast, Source={StaticResource Locator}}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -33,15 +34,7 @@
 
             <!-- Mitarbeiterübersicht -->
             <TextBlock Text="Liste aller Gäste (nach letztes Buchungsdatum sortiert): " Margin="10,12" FontSize="17"/>
-            <DataGrid AlternatingRowBackground="Lavender" Margin="5">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Vorname" Binding="{Binding}"/>
-                    <DataGridTextColumn Header="Nachname" Binding="{Binding}"/>
-                    <DataGridTextColumn Header="Alter" Binding="{Binding}"/>
-                    <DataGridTextColumn Header="Nationalität" Binding="{Binding}"/>
-                    <DataGridTextColumn Header="Datum letzer Buchung" Binding="{Binding}"/>
-                    <DataGridTextColumn Header="Anzahl Buchungen" Binding="{Binding}"/>
-                </DataGrid.Columns>
+            <DataGrid AlternatingRowBackground="Lavender" Margin="5" AutoGenerateColumns="True" ItemsSource="{Binding Gaeste}">
             </DataGrid>
 
         </StackPanel>

@@ -18,7 +18,7 @@
 
         <!-- Filer-->
         <StackPanel Grid.Row="1">
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="Filtering: " FontSize="17" VerticalAlignment="Top" Margin="10"/>
+            <TextBlock Text="Filtering: " FontSize="17" VerticalAlignment="Top" Margin="10"/>
             <StackPanel Orientation="Horizontal">
                 <Button Content="Schlechte Bewertungen anzeigen!" Margin="25,0"/>
                 <Label Content="Filter nach Bewertungskala: " Margin="8,0" />

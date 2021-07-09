@@ -52,7 +52,7 @@ namespace HotelAdministration.Model
                                                "FROM Zimmerbuchung " +
                                                "JOIN Person USING (PersonID) " +
                                                "JOIN Zimmerbuchungsdetails USING (BuchungsID) " +
-                                               "JOIN Zimmer USING (ZimmerNr) " 
+                                               "JOIN Zimmer ON Zimmerbuchungsdetails.Zimmernr = Zimmer.Zimmernr"
                     , connection))
             {
                 using (var reader = cmd.ExecuteReader())
@@ -72,11 +72,11 @@ namespace HotelAdministration.Model
         {
             ObservableCollection<Gast> gaeste = new ObservableCollection<Gast>();
 
-            using (var cmd = new OracleCommand("SELECT PersonID, Person.Vorname, Person.Nachname, Person.Geburtsdatum, Land.Bezeichnung" +
-                                               "FROM Gast" +
-                                               "JOIN Person USING (PersonID)" +
-                                               "JOIN Reisepass USING (ReisepassID)" +
-                                               "JOIN Land USING (LandID)"
+            using (var cmd = new OracleCommand("SELECT PersonID, Person.Vorname, Person.Nachname, Person.Geburtsdatum, Land.Landname " +
+                                               "FROM Gast " +
+                                               "JOIN Person USING (PersonID) " +
+                                               "JOIN Reisepass USING (ReisepassID) " +
+                                               "JOIN Land USING (LandID) "
                 , connection))
             {
                 using (var reader = cmd.ExecuteReader())
@@ -97,10 +97,10 @@ namespace HotelAdministration.Model
             ObservableCollection<Mitarbeiter> mitarbeiterliste = new ObservableCollection<Mitarbeiter>();
 
             using (var cmd = new OracleCommand("SELECT PersonID, Person.Vorname, Person.Nachname, Person.Geburtsdatum, Person.SVN, " +
-                                               "Gehaltsstuffe.Gehalt, Adresse.Strasse, Adresse.HausNr, Adresse.TuerNr, Adresse.PLZ, Adresse.Ort, Adresse.Land" +
-                                               "FROM Personal" +
-                                               "JOIN Person USING (PersonID)" +
-                                               "JOIN Gehaltsstuffe USING (GehaltsstuffeID)" +
+                                               "Gehaltsstufe.Monatsgehalt, Adresse.Strasse, Adresse.HausNr, Adresse.TuerNr, Adresse.PLZ, Adresse.Ort, Adresse.Land " +
+                                               "FROM Personal " +
+                                               "JOIN Person USING (PersonID) " +
+                                               "JOIN Gehaltsstufe USING (GehaltsstufeID) " +
                                                "JOIN Adresse USING (AdressID)"
                 , connection))
             {
@@ -108,7 +108,7 @@ namespace HotelAdministration.Model
                 {
                     while (reader.Read())
                     {
-                        Mitarbeiter toInsert = new Mitarbeiter(reader.GetString(0), reader.GetString(1), reader.GetString(2),
+                        Mitarbeiter toInsert = new Mitarbeiter(reader.GetInt32(0), reader.GetString(1), reader.GetString(2),
                             reader.GetDateTime(3), reader.GetInt32(4), reader.GetDouble(5), reader.GetString(6), reader.GetInt32(7),
                             reader.GetInt32(8), reader.GetInt32(9), reader.GetString(10), reader.GetString(11));
                         mitarbeiterliste.Add(toInsert);
@@ -121,8 +121,7 @@ namespace HotelAdministration.Model
         {
             ObservableCollection<Rechnung> rechnungen = new ObservableCollection<Rechnung>();
 
-            using (var cmd = new OracleCommand("SELECT RechnungsID, Rechnungssumme, Austellungsdatum, AusstellerkontoID, EmpfaengerkontoID" +
-                                               "FROM Rechnung"
+            using (var cmd = new OracleCommand("SELECT * FROM TABLE(DeadlineRechnung)"
                 , connection))
             {
                 using (var reader = cmd.ExecuteReader())

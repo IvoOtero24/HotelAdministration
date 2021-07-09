@@ -8,7 +8,7 @@
         xmlns:views="clr-namespace:HotelAdministration.Views"
         mc:Ignorable="d"
         DataContext="{Binding Main, Source={StaticResource Locator}}"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="550" Width="1150">
 
     <Window.Resources>
         <Style x:Key="StyledButton" TargetType="Button">

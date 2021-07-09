@@ -8,7 +8,7 @@ namespace HotelAdministration.Model
 {
     public class Mitarbeiter
     {
-        public Mitarbeiter(string personID, string vorname, string nachname, DateTime gebDatum, int svn, double gehalt, string strasse, int hausNr, int tuerNr, int plz, string ort, string land)
+        public Mitarbeiter(int personID, string vorname, string nachname, DateTime gebDatum, int svn, double gehalt, string strasse, int hausNr, int tuerNr, int plz, string ort, string land)
         {
             this.PersonID = personID;
             this.Vorname = vorname;
@@ -22,7 +22,7 @@ namespace HotelAdministration.Model
             this.Land = land;
         }
 
-        public string PersonID { get; private set; }
+        public int PersonID { get; private set; }
         public string Vorname { get; private set; }
         public string Nachname { get; private set; }
         public DateTime GebDatum { get; private set; }
