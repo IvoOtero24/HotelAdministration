@@ -94,13 +94,16 @@ CREATE TABLE Abteilung(
 -------------------------------
 --  DDL table for Person
 -------------------------------
+
 CREATE TABLE Person(
 	PersonID NUMBER NOT NULL,
 	Vorname VARCHAR2(255) NOT NULL,
 	Nachname VARCHAR2(255) NOT NULL,	
 	SVN NUMBER NOT NULL,
 	Geburtsdatum DATE,
-	AdressID NUMBER NOT NULL
+	AdressID NUMBER NOT NULL,
+	Email VARCHAR2(255) NOT NULL,
+	Telefon VARCHAR2(255) NOT NULL
 );
 
 
