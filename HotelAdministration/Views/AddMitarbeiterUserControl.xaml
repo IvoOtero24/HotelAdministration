@@ -5,7 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:HotelAdministration.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             DataContext="{Binding Mitarbeiter, Source={StaticResource Locator}}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -36,16 +37,7 @@
 
         <!-- Mitarbeiterübersicht -->
         <TextBlock Text="Liste aller Mitarbeiter: " Margin="10,12" FontSize="17"/>
-        <DataGrid AlternatingRowBackground="Lavender" Margin="5">
-            <DataGrid.Columns>
-                    <DataGridTextColumn Header="Name" Binding="{Binding}"/>
-                    <DataGridTextColumn Header="Geb. Datum" Binding="{Binding}"/>
-                    <DataGridTextColumn Header="SVN" Binding="{Binding}"/>
-                    <DataGridTextColumn Header="Gehalt" Binding="{Binding}"/>
-                    <DataGridTextColumn Header="Addresse" Binding="{Binding}"/>
-                    <DataGridTemplateColumn Header="Mitarbeiter llöschen?">
-                    </DataGridTemplateColumn>
-            </DataGrid.Columns>
+        <DataGrid AlternatingRowBackground="Lavender" Margin="5" AutoGenerateColumns="True" ItemsSource="{Binding Mitarbeiterliste}">
         </DataGrid>
 
         </StackPanel>
