@@ -594,7 +594,6 @@ INSERT INTO Servicedetails (BuchungsID,ServiceID,Anzahl,Preis) VALUES (22,4,1,20
 INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (301,3,10,20);
 INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (302,3,10,20);
 INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (303,13,100,100);
-INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (303,26,30,60);
 INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (304,23,5,500);
 INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (305,8,4,120);
 INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (306,17,10,500);
