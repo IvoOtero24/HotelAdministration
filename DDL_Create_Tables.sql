@@ -26,9 +26,9 @@ CREATE TABLE Ware(
 CREATE TABLE Adresse(
 	AdressID NUMBER NOT NULL,
 	Strasse VARCHAR2(50) NOT NULL,
-	HausNr INT NOT NULL,
-	TuerNr INT,
-	PLZ INT NOT NULL,
+	HausNr NUMBER NOT NULL,
+	TuerNr NUMBER NOT NULL,
+	PLZ NUMBER NULL,
 	Ort VARCHAR2(50) NOT NULL, 
 	Land VARCHAR2(50) NOT NULL	
 );
@@ -94,13 +94,16 @@ CREATE TABLE Abteilung(
 -------------------------------
 --  DDL table for Person
 -------------------------------
+
 CREATE TABLE Person(
 	PersonID NUMBER NOT NULL,
 	Vorname VARCHAR2(255) NOT NULL,
 	Nachname VARCHAR2(255) NOT NULL,	
 	SVN NUMBER NOT NULL,
 	Geburtsdatum DATE,
-	AdressID NUMBER NOT NULL
+	AdressID NUMBER NOT NULL,
+	Email VARCHAR2(255) NOT NULL,
+	Telefon VARCHAR2(255) NOT NULL
 );
 
 
@@ -155,8 +158,8 @@ CREATE TABLE Rechnung(
 	RechnungsID NUMBER NOT NULL,	
 	RechnungsSumme NUMBER(7,2) NOT NULL,	
 	Ausstellungsdatum DATE NOT NULL,	
-	AusstellerKontoID NUMBER NOT NULL,
-	EmpfaengerKontoID NUMBER NOT NULL		
+	EmpfaengerKontoID NUMBER NOT NULL,
+	AusstellerKontoID NUMBER NOT NULL		
 );
 
 
@@ -228,7 +231,8 @@ CREATE TABLE Kundenbewertung(
 	PersonID NUMBER NOT NULL,	
 	BewertungsID NUMBER NOT NULL, 
 	Bewertungskommentar VARCHAR2(250) NOT NULL,			
-  BuchungsID NUMBER NOT NULL	
+  	BuchungsID NUMBER NOT NULL,
+	Bewertung NUMBER NOT NULL
 );
 
 
