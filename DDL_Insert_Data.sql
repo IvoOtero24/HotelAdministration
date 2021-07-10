@@ -43,7 +43,7 @@ INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (30,'Radler',
 
 -----------------------------
 --  INSERT for Adresse
------------------------------ID
+-----------------------------
 INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (1,'Ap #641-7526 Pellentesque Ave',29,8,'008132','Nasino',1);
 INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (2,'P.O. Box 411, 4760 Tellus. Ave',57,5,'3263','Laives/Leifers',2);
 INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (3,'5746 Purus Rd.',39,7,'9776','Utrecht',3);
@@ -74,7 +74,7 @@ INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (27,'
 INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (28,'208-2234 Nec Avenue',4,8,'31566','Brixton',26);
 INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (29,'391-4100 Eget Rd.',12,3,'400400','Dannevirke',27);
 INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (30,'Ap #124-3208 Justo. Street',31,8,'71184','Montague',28);
-ID
+
 -----------------------------
 --  INSERT for service
 -----------------------------
