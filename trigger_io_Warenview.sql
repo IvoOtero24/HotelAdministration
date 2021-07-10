@@ -22,9 +22,9 @@ DECLARE
   SELECT COUNT (*)INTO check_waren_art FROM WarenArt WHERE WarenArtName = :new.WarenArtName;
    SELECT COUNT (*)INTO check_ware FROM Ware WHERE WarenName = :new.WarenName;
 -- IF existed 
- IF check_waren_art != 0 then
+ IF check_waren_art != 0 THEN
   SELECT WarenArtID INTO warenart_id FROM WarenArt WHERE WarenArtName = :new.WarenArtName;
-  IF check_ware !=0 then
+  IF check_ware !=0 THEN
    raise_application_error(-20201, 'Ware existiert schon.');
   ELSE
  SELECT max(WarenID) INTO waren_id FROM Ware;
@@ -33,7 +33,7 @@ DECLARE
  ELSE
    SELECT max(WarenArtID) INTO warenart_id FROM WarenArt;
     INSERT INTO WarenArt VALUES (warenart_id+1,:new.WarenArtName);
-   IF check_ware !=0 then
+   IF check_ware !=0 THEN
    raise_application_error(-20201, 'Ware existiert schon.');
   ELSE
    SELECT max(WarenID) INTO waren_id FROM Ware;
