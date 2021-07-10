@@ -30,7 +30,7 @@ CREATE TABLE Adresse(
 	TuerNr NUMBER NOT NULL,
 	PLZ NUMBER NULL,
 	Ort VARCHAR2(50) NOT NULL, 
-	Land VARCHAR2(50) NOT NULL	
+	LandID Number NOT NULL	
 );
 
 
@@ -129,6 +129,16 @@ CREATE TABLE Personal(
 	AbteilungsID NUMBER NOT NULL
 );
 
+-------------------------------------
+--  DDL table for ehemalige Mitarbeiter
+-------------------------------------
+CREATE TABLE EhemaligeMitarbeiter(
+        PersonID NUMBER PRIMARY KEY,	
+	GehaltsstufeID NUMBER NOT NULL,	
+	KontoID NUMBER NOT NULL,	
+	AbteilungsID NUMBER NOT NULL,
+	Austrittsdatum DATE NOT NULL
+);
 
 -------------------------------------
 --  DDL table for Gast
