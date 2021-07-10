@@ -582,11 +582,11 @@ INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (309,5,17
 --------------------------------
 --  INSERT for Kundenbewertung
 --------------------------------
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (11,1,'Komischer Geruch aber sonst super',2,8);
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (11,1,'Komischer Geruch aber sonst super',2,4);
 INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (24,2,'Genialer Service! Gerne wieder!',15,10);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (28,3,'Hat mir sehr gut gefallen',19,8);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (18,4,'Personal freundlich und Zimmer sauber, was will man mehr?',9,9);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (30,5,'Faende den Preis unschlagbar, freue mich schon auf das naechste Jahr!',21,10);	
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (28,3,'Hat mir nicht gut gefallen',19,3);
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (18,4,'War sehr enttaeuscht. Das Zimmer war nicht sauber.',9,2);
+INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (30,5,'Faende den Preis teuer für das klein Einzelzimmer',21,4);	
 
 
 commit;
