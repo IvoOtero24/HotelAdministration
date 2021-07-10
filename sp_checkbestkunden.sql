@@ -1,7 +1,7 @@
 SET serveroutput ON;
 
 --Create procedure to print the list of 10 customers who pay most.
-CREATE OR REPLACE PROCEDURE sp_check_best_kunden
+CREATE OR REPLACE PROCEDURE sp_checkbestkunden
 AS
     CURSOR best_kunden_cur   
   IS
@@ -26,6 +26,6 @@ END;
 -------------------
 -- execute procedure
 -------------------
-EXEC sp_check_best_kunden;
+EXEC sp_checkbestkunden;
 /
 
