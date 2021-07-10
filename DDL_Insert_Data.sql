@@ -19,7 +19,7 @@ INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (6,'Weichsp?l
 INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (7,'Papierkorb',10,2);
 INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (8,'Serviette',30,4);
 INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (9,'Toiletpaper',20,1);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (10,'F?n',20,5);
+INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (10,'Foen',20,5);
 INSERT INTO Ware (WarenID,WarenName,EinzelPreis,WarenArtID) VALUES (11,'Lotion',1,1);
 INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (12,'Duschhaube',1.5,1);
 INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (13,'Rasierer',1,1);
@@ -83,7 +83,7 @@ INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (2,'Waesche',7);
 INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (3,'Spa',50);
 INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (4,'Auto Mieten',20);
 INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (5,'Blumenarrangement',40);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (6,'B?gelservice',5);
+INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (6,'Buegelservice',5);
 INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (7,'Mail-Dienste',5);
 INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (8,'Masssagen',30);
 INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (9,'Schuhputzservice',10);
