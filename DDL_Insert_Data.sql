@@ -43,38 +43,38 @@ INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (30,'Radler',
 
 -----------------------------
 --  INSERT for Adresse
------------------------------
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (1,'Ap #641-7526 Pellentesque Ave',29,8,'008132','Nasino','Gibraltar');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (2,'P.O. Box 411, 4760 Tellus. Ave',57,5,'3263','Laives/Leifers','Gambia');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (3,'5746 Purus Rd.',39,7,'9776','Utrecht','Estonia');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (4,'Ap #271-5968 Ut, Ave',32,6,'9865','Canino','American Samoa');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (5,'P.O. Box 676, 8145 Luctus, Av.',95,4,'6606','Alings?s','Libya');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (6,'P.O. Box 194, 8180 Malesuada Av.',3,4,'09484','Mersin','United Arab Emirates');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (7,'Ap #155-2664 Lacus. Ave',33,10,'55500','Huacho','?land Islands');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (8,'579-4772 Nec, St.',22,8,'30328','Paradise','French Polynesia');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (9,'Ap #480-3527 Maecenas Street',5,2,'11212','Mattersburg','Serbia');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (10,'715-8800 Mauris. St.',7,3,'54908','Vehari','Gambia');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (11,'9952 Arcu. St.',64,9,'69007','Zeya','Israel');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (12,'P.O. Box 734, 3093 Nulla Avenue',47,6,'60033208','Castellafiume','Benin');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (13,'Ap #320-7134 Vel, Street',66,8,'99916481','Kitimat','Eritrea');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (14,'P.O. Box 228, 7185 Fermentum Rd.',94,3,'06710','Santarcangelo di Romagna','Denmark');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (15,'1553 Tristique Avenue',58,10,'2048','San Giorgio Albanese','Philippines');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (16,'7583 Vulputate Ave',8,3,'66568','Ancaster Town','Sint Maarten');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (17,'3517 Cras Rd.',15,1,'894589','Ergani','Panama');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (18,'P.O. Box 103, 2547 Justo Street',54,7,'2394238457','Panipat','Saint Kitts and Nevis');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (19,'7992 Ipsum Avenue',29,9,'5578','Spruce Grove','Gabon');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (20,'5893 Quis Avenue',38,3,'74739','Lleida','Uzbekistan');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (21,'9429 Dui St.',85,3,'354412','B?ziers','Algeria');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (22,'Ap #960-6868 Quisque St.',94,8,'07633','Recanati','Namibia');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (23,'P.O. Box 630, 1747 Parturient St.',31,10,'550861','Baltasound','Hungary');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (24,'Ap #470-3684 Dui. St.',28,2,'797465','Straubing','Luxembourg');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (25,'Ap #291-5074 Penatibus Av.',57,10,'16711263','Silius','Viet Nam');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (26,'119-3352 Risus Street',30,7,'6725','Medell?n','Argentina');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (27,'P.O. Box 948, 5383 Proin Avenue',40,6,'367166','Racine','New Caledonia');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (28,'208-2234 Nec Avenue',4,8,'31566','Brixton','Japan');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (29,'391-4100 Eget Rd.',12,3,'400400','Dannevirke','Guernsey');
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,Land) VALUES (30,'Ap #124-3208 Justo. Street',31,8,'71184','Montague','Mauritius');
-
+-----------------------------ID
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (1,'Ap #641-7526 Pellentesque Ave',29,8,'008132','Nasino',1);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (2,'P.O. Box 411, 4760 Tellus. Ave',57,5,'3263','Laives/Leifers',2);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (3,'5746 Purus Rd.',39,7,'9776','Utrecht',3);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (4,'Ap #271-5968 Ut, Ave',32,6,'9865','Canino',4);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (5,'P.O. Box 676, 8145 Luctus, Av.',95,4,'6606','Alings?s',5);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (6,'P.O. Box 194, 8180 Malesuada Av.',3,4,'09484','Mersin',6);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (7,'Ap #155-2664 Lacus. Ave',33,10,'55500','Huacho',7);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (8,'579-4772 Nec, St.',22,8,'30328','Paradise',8);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (9,'Ap #480-3527 Maecenas Street',5,2,'11212','Mattersburg',9);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (10,'715-8800 Mauris. St.',7,3,'54908','Vehari',10);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (11,'9952 Arcu. St.',64,9,'69007','Zeya',10);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (12,'P.O. Box 734, 3093 Nulla Avenue',47,6,'60033208','Castellafiume',11);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (13,'Ap #320-7134 Vel, Street',66,8,'99916481','Kitimat',12);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (14,'P.O. Box 228, 7185 Fermentum Rd.',94,3,'06710','Santarcangelo di Romagna',13);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (15,'1553 Tristique Avenue',58,10,'2048','San Giorgio Albanese',14);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (16,'7583 Vulputate Ave',8,3,'66568','Ancaster Town',15);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (17,'3517 Cras Rd.',15,1,'894589','Ergani',16);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (18,'P.O. Box 103, 2547 Justo Street',54,7,'2394238457','Panipat',17);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (19,'7992 Ipsum Avenue',29,9,'5578','Spruce Grove',18);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (20,'5893 Quis Avenue',38,3,'74739','Lleida',19);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (21,'9429 Dui St.',85,3,'354412','B?ziers',20);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (22,'Ap #960-6868 Quisque St.',94,8,'07633','Recanati',21);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (23,'P.O. Box 630, 1747 Parturient St.',31,10,'550861','Baltasound',21);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (24,'Ap #470-3684 Dui. St.',28,2,'797465','Straubing',22);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (25,'Ap #291-5074 Penatibus Av.',57,10,'16711263','Silius',23);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (26,'119-3352 Risus Street',30,7,'6725','Medell?n',24);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (27,'P.O. Box 948, 5383 Proin Avenue',40,6,'367166','Racine',25);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (28,'208-2234 Nec Avenue',4,8,'31566','Brixton',26);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (29,'391-4100 Eget Rd.',12,3,'400400','Dannevirke',27);
+INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (30,'Ap #124-3208 Justo. Street',31,8,'71184','Montague',28);
+ID
 -----------------------------
 --  INSERT for service
 -----------------------------
