@@ -667,3 +667,23 @@ SELECT table_name FROM user_tables;
 ----------------------------------------------------------
 CREATE SEQUENCE personid_seq START WITH 1;
 CREATE SEQUENCE adressid_seq START WITH 1;
+CREATE SEQUENCE lieferantenid_seq START WITH 101;
+CREATE SEQUENCE warenid_seq START WITH 1;
+CREATE SEQUENCE warenartid_seq START WITH 1;
+CREATE SEQUENCE zimmerbuchungsid_seq START WITH 1;
+CREATE SEQUENCE gehaltsstufeid_seq START WITH 10;
+CREATE SEQUENCE abteilungsid_seq START WITH 101;
+CREATE SEQUENCE kontoid_seq START WITH 500;
+CREATE SEQUENCE bestellungsid_seq START WITH 301;
+CREATE SEQUENCE bewertungsid_seq START WITH 1;
+
+CREATE OR REPLACE TRIGGER t_add_person_id 
+BEFORE INSERT ON person 
+FOR EACH ROW
+
+BEGIN
+  SELECT personid_seq.NEXTVAL
+  INTO   :new.personid
+  FROM   dual;
+END;
+/
