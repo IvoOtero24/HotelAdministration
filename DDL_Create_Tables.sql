@@ -537,7 +537,12 @@ SELECT table_name FROM user_tables;
   ALTER TABLE "REISEPASS" ADD FOREIGN KEY ("LANDID")
 	  REFERENCES "LAND" ("LANDID") ENABLE;
  
- 
+ --------------------------------------------------------
+--  REF CONSTRAINTS FOR TABLE ADRESSE
+--------------------------------------------------------
+
+  ALTER TABLE "ADRESSE" ADD FOREIGN KEY ("LANDID")
+	  REFERENCES "LAND" ("LANDID") ENABLE;
 --------------------------------------------------------
 --  REF CONSTRAINTS FOR TABLE PERSONAL 
 --------------------------------------------------------
@@ -683,7 +688,7 @@ CREATE SEQUENCE rechnungsid_seq START WITH 200;
 
 
 ---------------------------------------------
----------- Triggers für IDs -----------------
+---------- Triggers fÃ¼r IDs -----------------
 ---------------------------------------------
 CREATE OR REPLACE TRIGGER t_add_person_id 
 BEFORE INSERT ON person 
