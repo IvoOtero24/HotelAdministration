@@ -1,145 +1,144 @@
 -----------------------------
 --  INSERT for WarenArt
 -----------------------------
-INSERT INTO WarenArt (WarenArtID,WarenArtName) VALUES (1,'Toilettenartikel');
-INSERT INTO WarenArt (WarenArtID,WarenArtName) VALUES (2,'Zimmerartikel');
-INSERT INTO WarenArt (WarenArtID,WarenArtName) VALUES (3, 'Waschraumartikel');
-INSERT INTO WarenArt (WarenArtID,WarenArtName) VALUES (4,'Restaurantartikel');
-INSERT INTO WarenArt (WarenArtID,WarenArtName) VALUES (5,'Geraete');
+INSERT INTO WarenArt (WarenArtName) VALUES ('Toilettenartikel');
+INSERT INTO WarenArt (WarenArtName) VALUES ('Zimmerartikel');
+INSERT INTO WarenArt (WarenArtName) VALUES ('Waschraumartikel');
+INSERT INTO WarenArt (WarenArtName) VALUES ('Restaurantartikel');
+INSERT INTO WarenArt (WarenArtName) VALUES ('Geraete');
 
 -----------------------------
 --  INSERT for Ware
 -----------------------------
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (1,'Zahnburste',2,1);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (2,'Duschtuch',10,1);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (3,'Seife',2,1);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (4,'Haarshampoo',3,1);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (5,'Waschmittel',20,3);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (6,'Weichsp?ler',20,3);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (7,'Papierkorb',10,2);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (8,'Serviette',30,4);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (9,'Toiletpaper',20,1);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (10,'Foen',20,5);
-INSERT INTO Ware (WarenID,WarenName,EinzelPreis,WarenArtID) VALUES (11,'Lotion',1,1);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (12,'Duschhaube',1.5,1);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (13,'Rasierer',1,1);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (14,'Zahnpasta',0.5,1);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (15,'Kissen',10,2);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (16,'Bettwasche',30,2);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (17,'Decke',50,2);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (18,'Staubsauger',100,5);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (19,'Vorhang',30,2);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (20,'Tee',0.7,4);
-INSERT INTO Ware (WarenID,WarenName,EinzelPreis,WarenArtID) VALUES (21,'Cafe',1.3,4);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (22,'Putzmittel',15,3);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (23,'Fernseher',100,5);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (24,'PapierBecher',1,4);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (25,'Wine',5,4);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (26,'Milch',2,4);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (27,'Coke',1,4);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (28,'Mineral Wasser',1,4);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (29,'Bier',0.9,4);
-INSERT INTO Ware (WarenID,WarenName,Einzelpreis,WarenArtID) VALUES (30,'Radler',1,4);
-
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Zahnburste',2,1);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Duschtuch',10,1);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Seife',2,1);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Haarshampoo',3,1);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Waschmittel',20,3);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Weichsp?ler',20,3);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Papierkorb',10,2);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Serviette',30,4);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Toiletpaper',20,1);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Foen',20,5);
+INSERT INTO Ware (WarenName,EinzelPreis,WarenArtID) VALUES ('Lotion',1,1);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Duschhaube',1.5,1);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Rasierer',1,1);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Zahnpasta',0.5,1);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Kissen',10,2);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Bettwasche',30,2);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Decke',50,2);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Staubsauger',100,5);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Vorhang',30,2);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Tee',0.7,4);
+INSERT INTO Ware (WarenName,EinzelPreis,WarenArtID) VALUES ('Cafe',1.3,4);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Putzmittel',15,3);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Fernseher',100,5);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('PapierBecher',1,4);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Wine',5,4);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Milch',2,4);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Coke',1,4);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Mineral Wasser',1,4);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Bier',0.9,4);
+INSERT INTO Ware (WarenName,Einzelpreis,WarenArtID) VALUES ('Radler',1,4);
 -----------------------------
 --  INSERT for Land
 -----------------------------
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (1,'AR','Argentina');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (2,'AT','Austria');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (3,'BE','Belgium');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (4,'BR','Brazil');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (5,'CA','Canada');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (6,'CN','China');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (7,'DK','Denmark');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (8,'EG','Egypt');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (9,'FI','Finland');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (10,'FR','France');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (11,'DE','Germany');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (12,'GR','Greece');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (13,'HK','Hong Kong');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (14,'HU','Hungary');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (15,'IS','Iceland');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (16,'IN','India');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (17,'IR','Iran');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (18,'IE','Ireland');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (19,'IT','Italy');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (20,'JP','Japan');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (21,'KR','Korea');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (22,'LU','Luxemburg');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (23,'MO','Macao');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (24,'MY','Malaysia');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (25,'MT','Malta');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (26,'MX','Mexico');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (27,'MN','Mongolia');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (28,'MA','Morocco');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (29,'NL','Netherlands');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (30,'NZ','New Zealand');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (31,'NO','Norway');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (32,'PL','Poland');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (33,'PT','Portugal');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (34,'RO','Romania');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (35,'SG','Singapore');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (36,'SK','Slovakia');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (37,'SI','Slovenia');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (38,'ZA','South Africa');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (39,'ES','Spain');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (40,'SE','Sweden');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (41,'CH','Switzerland');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (42,'TW','Taiwan');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (43,'US','United States of America');
-INSERT INTO Land (LANDID, KENNZEICHEN, LANDNAME) VALUES (44,'VN','Viet Nam');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('AR','Argentina');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('AT','Austria');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('BE','Belgium');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('BR','Brazil');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('CA','Canada');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('CN','China');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('DK','Denmark');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('EG','Egypt');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('FI','Finland');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('FR','France');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('DE','Germany');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('GR','Greece');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('HK','Hong Kong');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('HU','Hungary');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('IS','Iceland');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('IN','India');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('IR','Iran');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('IE','Ireland');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('IT','Italy');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('JP','Japan');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('KR','Korea');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('LU','Luxemburg');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('MO','Macao');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('MY','Malaysia');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('MT','Malta');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('MX','Mexico');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('MN','Mongolia');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('MA','Morocco');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('NL','Netherlands');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('NZ','New Zealand');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('NO','Norway');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('PL','Poland');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('PT','Portugal');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('RO','Romania');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('SG','Singapore');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('SK','Slovakia');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('SI','Slovenia');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('ZA','South Africa');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('ES','Spain');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('SE','Sweden');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('CH','Switzerland');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('TW','Taiwan');
+INSERT INTO Land ( KENNZEICHEN, LANDNAME) VALUES ('US','United States of America');
+INSERT INTO Land (KENNZEICHEN, LANDNAME) VALUES ('VN','Viet Nam');
 -----------------------------
 --  INSERT for Adresse
 -----------------------------
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (1,'Ap #641-7526 Pellentesque Ave',29,8,'008132','Nasino',1);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (2,'P.O. Box 411, 4760 Tellus. Ave',57,5,'3263','Laives/Leifers',2);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (3,'5746 Purus Rd.',39,7,'9776','Utrecht',3);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (4,'Ap #271-5968 Ut, Ave',32,6,'9865','Canino',4);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (5,'P.O. Box 676, 8145 Luctus, Av.',95,4,'6606','Alings?s',5);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (6,'P.O. Box 194, 8180 Malesuada Av.',3,4,'09484','Mersin',6);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (7,'Ap #155-2664 Lacus. Ave',33,10,'55500','Huacho',7);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (8,'579-4772 Nec, St.',22,8,'30328','Paradise',8);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (9,'Ap #480-3527 Maecenas Street',5,2,'11212','Mattersburg',9);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (10,'715-8800 Mauris. St.',7,3,'54908','Vehari',10);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (11,'9952 Arcu. St.',64,9,'69007','Zeya',10);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (12,'P.O. Box 734, 3093 Nulla Avenue',47,6,'60033208','Castellafiume',11);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (13,'Ap #320-7134 Vel, Street',66,8,'99916481','Kitimat',12);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (14,'P.O. Box 228, 7185 Fermentum Rd.',94,3,'06710','Santarcangelo di Romagna',13);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (15,'1553 Tristique Avenue',58,10,'2048','San Giorgio Albanese',14);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (16,'7583 Vulputate Ave',8,3,'66568','Ancaster Town',15);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (17,'3517 Cras Rd.',15,1,'894589','Ergani',16);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (18,'P.O. Box 103, 2547 Justo Street',54,7,'2394238457','Panipat',17);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (19,'7992 Ipsum Avenue',29,9,'5578','Spruce Grove',18);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (20,'5893 Quis Avenue',38,3,'74739','Lleida',19);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (21,'9429 Dui St.',85,3,'354412','B?ziers',20);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (22,'Ap #960-6868 Quisque St.',94,8,'07633','Recanati',21);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (23,'P.O. Box 630, 1747 Parturient St.',31,10,'550861','Baltasound',21);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (24,'Ap #470-3684 Dui. St.',28,2,'797465','Straubing',22);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (25,'Ap #291-5074 Penatibus Av.',57,10,'16711263','Silius',23);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (26,'119-3352 Risus Street',30,7,'6725','Medell?n',24);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (27,'P.O. Box 948, 5383 Proin Avenue',40,6,'367166','Racine',25);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (28,'208-2234 Nec Avenue',4,8,'31566','Brixton',26);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (29,'391-4100 Eget Rd.',12,3,'400400','Dannevirke',27);
-INSERT INTO Adresse (AdressID,Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES (30,'Ap #124-3208 Justo. Street',31,8,'71184','Montague',28);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('Ap #641-7526 Pellentesque Ave',29,8,'008132','Nasino',1);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('P.O. Box 411, 4760 Tellus. Ave',57,5,'3263','Laives/Leifers',2);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('5746 Purus Rd.',39,7,'9776','Utrecht',3);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('Ap #271-5968 Ut, Ave',32,6,'9865','Canino',4);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('P.O. Box 676, 8145 Luctus, Av.',95,4,'6606','Alings?s',5);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('P.O. Box 194, 8180 Malesuada Av.',3,4,'09484','Mersin',6);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('Ap #155-2664 Lacus. Ave',33,10,'55500','Huacho',7);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('579-4772 Nec, St.',22,8,'30328','Paradise',8);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('Ap #480-3527 Maecenas Street',5,2,'11212','Mattersburg',9);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('715-8800 Mauris. St.',7,3,'54908','Vehari',10);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('9952 Arcu. St.',64,9,'69007','Zeya',10);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('P.O. Box 734, 3093 Nulla Avenue',47,6,'60033208','Castellafiume',11);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('Ap #320-7134 Vel, Street',66,8,'99916481','Kitimat',12);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('P.O. Box 228, 7185 Fermentum Rd.',94,3,'06710','Santarcangelo di Romagna',13);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('1553 Tristique Avenue',58,10,'2048','San Giorgio Albanese',14);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('7583 Vulputate Ave',8,3,'66568','Ancaster Town',15);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('3517 Cras Rd.',15,1,'894589','Ergani',16);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('P.O. Box 103, 2547 Justo Street',54,7,'2394238457','Panipat',17);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('7992 Ipsum Avenue',29,9,'5578','Spruce Grove',18);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('5893 Quis Avenue',38,3,'74739','Lleida',19);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('9429 Dui St.',85,3,'354412','B?ziers',20);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('Ap #960-6868 Quisque St.',94,8,'07633','Recanati',21);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('P.O. Box 630, 1747 Parturient St.',31,10,'550861','Baltasound',21);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('Ap #470-3684 Dui. St.',28,2,'797465','Straubing',22);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('Ap #291-5074 Penatibus Av.',57,10,'16711263','Silius',23);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('119-3352 Risus Street',30,7,'6725','Medell?n',24);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('P.O. Box 948, 5383 Proin Avenue',40,6,'367166','Racine',25);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('208-2234 Nec Avenue',4,8,'31566','Brixton',26);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('391-4100 Eget Rd.',12,3,'400400','Dannevirke',27);
+INSERT INTO Adresse (Strasse,HausNr,TuerNr,PLZ,Ort,LandID) VALUES ('Ap #124-3208 Justo. Street',31,8,'71184','Montague',28);
 
 -----------------------------
 --  INSERT for service
 -----------------------------
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (1,'Fruehstueck im Bett',15);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (2,'Waesche',7);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (3,'Spa',50);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (4,'Auto Mieten',20);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (5,'Blumenarrangement',40);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (6,'Buegelservice',5);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (7,'Mail-Dienste',5);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (8,'Masssagen',30);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (9,'Schuhputzservice',10);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (10,'Ticketservice',3);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (11,'Ausflug und F?hrungen',150);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (12,'Flughafen Abholen',50);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (13,'Limousinenservice mit Transfer und Chauffeur',3);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (14,'Kurier',3);
-INSERT INTO Service (ServiceID,Beschreibung,Einzelpreis) VALUES (15,'Trocken Reinigung',10);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Fruehstueck im Bett',15);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Waesche',7);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Spa',50);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Auto Mieten',20);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Blumenarrangement',40);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Buegelservice',5);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Mail-Dienste',5);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Masssagen',30);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Schuhputzservice',10);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Ticketservice',3);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Ausflug und F?hrungen',150);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Flughafen Abholen',50);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Limousinenservice mit Transfer und Chauffeur',3);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Kurier',3);
+INSERT INTO Service (Beschreibung,Einzelpreis) VALUES ('Trocken Reinigung',10);
 
 -----------------------------
 --  INSERT for Zimmer
@@ -175,8 +174,6 @@ INSERT INTO Zimmer (ZimmerNr,ZimmerArt,Einzelpreis) VALUES (28,'Triple',140);
 INSERT INTO Zimmer (ZimmerNr,ZimmerArt,Einzelpreis) VALUES (29,'Quad',180);
 INSERT INTO Zimmer (ZimmerNr,ZimmerArt,Einzelpreis) VALUES (30,'Queen',350);
 
-select * from Zimmer;
-
 -----------------------------
 --  INSERT for Reisepass
 -----------------------------
@@ -206,30 +203,30 @@ INSERT INTO Reisepass (REISEPASSID, LANDID) VALUES ('F2300200',11);
 -----------------------------
 --  INSERT for Gehaltsstufe
 -----------------------------
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (10,142375/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (11,152387/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (12,162323/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (13,179210/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (14,189951/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (15,197392/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (16,200000/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (17,220000/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (18,246005/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (19,272121/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (20,284588/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (21,322112/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (22,372132/100);
-INSERT INTO Gehaltsstufe (GEHALTSSTUFEID, MONATSGEHALT) VALUES (23,392198/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (142375/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (152387/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (162323/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (179210/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (189951/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (197392/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (200000/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (220000/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (246005/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (272121/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (284588/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (322112/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (372132/100);
+INSERT INTO Gehaltsstufe ( MONATSGEHALT) VALUES (392198/100);
 
 -----------------------------
 --  INSERT for Abteilung
 -----------------------------
-INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (101,'Einkauf');
-INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (102,'Empfang');
-INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (103,'Marketing');
-INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (104,'Personal');
-INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (105,'Housekeeping');
-INSERT INTO Abteilung (ABTEILUNGSID, BESCHREIBUNG) VALUES (106,'Kueche');
+INSERT INTO Abteilung ( BESCHREIBUNG) VALUES ('Einkauf');
+INSERT INTO Abteilung ( BESCHREIBUNG) VALUES ('Empfang');
+INSERT INTO Abteilung ( BESCHREIBUNG) VALUES ('Marketing');
+INSERT INTO Abteilung ( BESCHREIBUNG) VALUES ('Personal');
+INSERT INTO Abteilung ( BESCHREIBUNG) VALUES ('Housekeeping');
+INSERT INTO Abteilung ( BESCHREIBUNG) VALUES ('Kueche');
 
 
 
@@ -274,46 +271,46 @@ INSERT INTO Person (VORNAME, NACHNAME, SVN, GEBURTSDATUM, ADRESSID, EMAIL, TELEF
 -----------------------------
 --  INSERT for Bankinformation
 -----------------------------
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (500, 630000000000000,'AT000000000000000000','Erste Bank',22);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (501, 633522819237634,'AT071234123412341234','Erste Bank',22);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (502, 633457919237634,'AT071234123412343842','Erste Bank',22);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (503, 634579329340094,'AT071234123234238972','Erste Bank',22);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (504, 633537498232131,'AT071232323234238972','Bank of Austria',23);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (505, 633594758786212,'AT071235653234238972','Bank of Austria',23);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (506, 633529347927231,'AT071275651232342389','Bank of Austria',23);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (507, 633537498232139,'AT942060464453795139','Raiffeisenbank',24);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (508, 633594758786218,'AT183621833298369432','Raiffeisenbank',24);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (509, 633529347927237,'AT496616397537985356','Raiffeisenbank',24);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (510, 633537498232136,'AT231400079756393461','Raiffeisenbank',24);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (511, 633594758786215,'AT923621828694129337','Raiffeisenbank',24);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (512, 633529347927000,'AT922250046562944578','Raiffeisenbank',24);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (513, 633529300000000,'ES120081792395134463','BBVA',22);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (514, 633529347927001,'ES120081792395134464','BBVA',22);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (515, 633529347927002,'BE28456811481920','BNP Paribas',20);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (516, 633529347927003,'BE28456811481926','BNP Paribas',20);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (517, 633529347927004,'EG464992275741144579','National Bank of Egypt',25);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (518, 633529347927005,'EG464992275741144590','National Bank of Egypt',25);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (519, 633529347927006,'EG464992275741144591','National Bank of Egypt',25);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (520, 633529347927007,'DK6950517575562648','Danske Bank',26);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (521, 633529347927008,'DK6950517575562649','Danske Bank',26);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (522, 633529347927009,'DK6950517575562650','Danske Bank',26);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (523, 633529347927010,'DK6950517575562651','Danske Bank',26);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (524, 633529347927011,'GR060103811671257','Piraeus Bank',26);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (525, 633529347927012,'IE05BOFI900017457675','Irish Bank',11);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (526, 633529347927013,'SE716559657373756436','SEB Bank',12);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (527, 633529347927014,'SE716559657373756400','Nordea Bank',21);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (528, 633529347927015,'SE416559657373756400','Nordea Bank',21);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (529, 633529347927016,'SE516559657373756400','Nordea Bank',21);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (530, 633529347927017,'SE616559657373756400','Nordea Bank',21);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (531, 733529347927017,'PL041090240299793854','PolskaBank',19);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (532, 833529347927017,'PL041090240299793855','PolskaBank',19);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (533, 933529347927017,'PL041090240299793856','PolskaBank',19);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (534, 133529347927011,'CH0489144868621335166','Credit Suisse',17);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (535, 133529347927012,'CH0489144868621335167','Credit Suisse',17);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (536, 133529347927013,'CH0489144868621335162','Credit Suisse',17);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (537, 133529347927014,'CH0489144868621335168','Credit Suisse',17);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (538, 133529347927015,'CH0489144868621335169','Credit Suisse',17);
-INSERT INTO Bankinformation (KONTOID, KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (539, 133529347927016,'CH0489144868621335161','Credit Suisse',17);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (630000000000000,'AT000000000000000000','Erste Bank',22);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633522819237634,'AT071234123412341234','Erste Bank',22);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633457919237634,'AT071234123412343842','Erste Bank',22);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (634579329340094,'AT071234123234238972','Erste Bank',22);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633537498232131,'AT071232323234238972','Bank of Austria',23);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633594758786212,'AT071235653234238972','Bank of Austria',23);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927231,'AT071275651232342389','Bank of Austria',23);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633537498232139,'AT942060464453795139','Raiffeisenbank',24);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633594758786218,'AT183621833298369432','Raiffeisenbank',24);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927237,'AT496616397537985356','Raiffeisenbank',24);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633537498232136,'AT231400079756393461','Raiffeisenbank',24);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633594758786215,'AT923621828694129337','Raiffeisenbank',24);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927000,'AT922250046562944578','Raiffeisenbank',24);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529300000000,'ES120081792395134463','BBVA',22);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927001,'ES120081792395134464','BBVA',22);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927002,'BE28456811481920','BNP Paribas',20);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927003,'BE28456811481926','BNP Paribas',20);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927004,'EG464992275741144579','National Bank of Egypt',25);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927005,'EG464992275741144590','National Bank of Egypt',25);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927006,'EG464992275741144591','National Bank of Egypt',25);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927007,'DK6950517575562648','Danske Bank',26);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927008,'DK6950517575562649','Danske Bank',26);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927009,'DK6950517575562650','Danske Bank',26);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927010,'DK6950517575562651','Danske Bank',26);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927011,'GR060103811671257','Piraeus Bank',26);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927012,'IE05BOFI900017457675','Irish Bank',11);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927013,'SE716559657373756436','SEB Bank',12);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927014,'SE716559657373756400','Nordea Bank',21);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927015,'SE416559657373756400','Nordea Bank',21);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927016,'SE516559657373756400','Nordea Bank',21);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (633529347927017,'SE616559657373756400','Nordea Bank',21);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (733529347927017,'PL041090240299793854','PolskaBank',19);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (833529347927017,'PL041090240299793855','PolskaBank',19);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (933529347927017,'PL041090240299793856','PolskaBank',19);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (133529347927011,'CH0489144868621335166','Credit Suisse',17);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (133529347927012,'CH0489144868621335167','Credit Suisse',17);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (33529347927013,'CH0489144868621335162','Credit Suisse',17);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (133529347927014,'CH0489144868621335168','Credit Suisse',17);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (133529347927015,'CH0489144868621335169','Credit Suisse',17);
+INSERT INTO Bankinformation ( KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (133529347927016,'CH0489144868621335161','Credit Suisse',17);
 
 
 -----------------------------
@@ -360,15 +357,15 @@ INSERT INTO Gast (PERSONID, REISEPASSID, KONTOID) VALUES (31, 'F2300200',539);
 -----------------------------
 --  INSERT for Lieferanten
 -----------------------------
-INSERT INTO Lieferanten (LIEFERANTENID, LIEFERANTENNAME, ADRESSID, KONTOID) VALUES (101,'Costa Cafe', 1, 501);
-INSERT INTO Lieferanten (LIEFERANTENID, LIEFERANTENNAME, ADRESSID, KONTOID) VALUES (102, 'Helio Glass', 2, 502);
-INSERT INTO Lieferanten (LIEFERANTENID, LIEFERANTENNAME, ADRESSID, KONTOID) VALUES (103, 'Coyote Furniture', 3, 503);
-INSERT INTO Lieferanten (LIEFERANTENID, LIEFERANTENNAME, ADRESSID, KONTOID) VALUES (104, 'Light Ideas', 4, 504);
-INSERT INTO Lieferanten (LIEFERANTENID, LIEFERANTENNAME, ADRESSID, KONTOID) VALUES (105, 'Bed-Tripod', 5, 505);
-INSERT INTO Lieferanten (LIEFERANTENID, LIEFERANTENNAME, ADRESSID, KONTOID) VALUES (106, 'Tri-Bad', 6, 506);
-INSERT INTO Lieferanten (LIEFERANTENID, LIEFERANTENNAME, ADRESSID, KONTOID) VALUES (107, 'Samsong', 7, 507);
-INSERT INTO Lieferanten (LIEFERANTENID, LIEFERANTENNAME, ADRESSID, KONTOID) VALUES (108, 'Whirlpul', 8, 508);
-INSERT INTO Lieferanten (LIEFERANTENID, LIEFERANTENNAME, ADRESSID, KONTOID) VALUES (109, 'Boschh', 9, 509);
+INSERT INTO Lieferanten ( LIEFERANTENNAME, ADRESSID, KONTOID) VALUES ('Costa Cafe', 1, 501);
+INSERT INTO Lieferanten ( LIEFERANTENNAME, ADRESSID, KONTOID) VALUES ('Helio Glass', 2, 502);
+INSERT INTO Lieferanten ( LIEFERANTENNAME, ADRESSID, KONTOID) VALUES ('Coyote Furniture', 3, 503);
+INSERT INTO Lieferanten ( LIEFERANTENNAME, ADRESSID, KONTOID) VALUES ('Light Ideas', 4, 504);
+INSERT INTO Lieferanten ( LIEFERANTENNAME, ADRESSID, KONTOID) VALUES ('Bed-Tripod', 5, 505);
+INSERT INTO Lieferanten ( LIEFERANTENNAME, ADRESSID, KONTOID) VALUES ('Tri-Bad', 6, 506);
+INSERT INTO Lieferanten ( LIEFERANTENNAME, ADRESSID, KONTOID) VALUES ('Samsong', 7, 507);
+INSERT INTO Lieferanten ( LIEFERANTENNAME, ADRESSID, KONTOID) VALUES ('Whirlpul', 8, 508);
+INSERT INTO Lieferanten ( LIEFERANTENNAME, ADRESSID, KONTOID) VALUES ('Boschh', 9, 509);
 
 
 -----------------------------
@@ -377,102 +374,102 @@ INSERT INTO Lieferanten (LIEFERANTENID, LIEFERANTENNAME, ADRESSID, KONTOID) VALU
 
 --  Bestellungen
 
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (223, 20, to_date('15.02.2020','DD.MM.YYYY'),500, 501); 
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (222, 20, to_date('10.07.2020','DD.MM.YYYY'),500, 502); 
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (205, 100, to_date('10.08.2019','DD.MM.YYYY'),500, 503); 
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (206, 500, to_date('17.05.2018','DD.MM.YYYY'),500, 504); 
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (207, 120, to_date('09.07.2019','DD.MM.YYYY'),500, 505); 
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (208, 500, to_date('22.04.2020','DD.MM.YYYY'),500, 506);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (209, 250, to_date('09.07.2019','DD.MM.YYYY'),500, 507);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (210, 75, to_date('04.08.2019','DD.MM.YYYY'),500, 508); 	
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (224, 340, to_date('09.07.2019','DD.MM.YYYY'),500, 509); 
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (20, to_date('15.02.2020','DD.MM.YYYY'),500, 501); 
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (20, to_date('10.07.2020','DD.MM.YYYY'),500, 502); 
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (100, to_date('10.08.2019','DD.MM.YYYY'),500, 503); 
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (500, to_date('17.05.2018','DD.MM.YYYY'),500, 504); 
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (120, to_date('09.07.2019','DD.MM.YYYY'),500, 505); 
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (500, to_date('22.04.2020','DD.MM.YYYY'),500, 506);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (250, to_date('09.07.2019','DD.MM.YYYY'),500, 507);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (75, to_date('04.08.2019','DD.MM.YYYY'),500, 508); 	
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (340, to_date('09.07.2019','DD.MM.YYYY'),500, 509); 
 	
--- Gäste
+-- Gaeste
 
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (300, 150, to_date('12/01/2018','DD.MM.YYYY'),510, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (301, 280, to_date('12/05/2018','DD.MM.YYYY'),511, 500); 
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (302, 750, to_date('22/01/2018','DD.MM.YYYY'),512, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (303, 150, to_date('08/01/2018','DD.MM.YYYY'),513, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (304, 2500, to_date('15/01/2020','DD.MM.YYYY'),514, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (305, 890, to_date('13/07/2018','DD.MM.YYYY'),515, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (306, 250, to_date('30/11/2019','DD.MM.YYYY'),516, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (307, 340, to_date('22/03/2019','DD.MM.YYYY'),517, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (308, 770, to_date('12/05/2018','DD.MM.YYYY'),518, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (309, 860, to_date('12/01/2018','DD.MM.YYYY'),519, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (310, 80, to_date('14/01/2020','DD.MM.YYYY'),520, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (311, 3500, to_date('18/06/2016','DD.MM.YYYY'),521, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (312, 1500, to_date('19/07/2017','DD.MM.YYYY'),522, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (313, 650, to_date('17/10/2018','DD.MM.YYYY'),523, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (314, 450, to_date('12/01/2021','DD.MM.YYYY'),524, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (315, 890, to_date('24/07/2019','DD.MM.YYYY'),525, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (316, 1200, to_date('17/09/2019','DD.MM.YYYY'),526, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (317, 2300, to_date('18/11/2020','DD.MM.YYYY'),527, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (318, 650, to_date('19/06/2021','DD.MM.YYYY'),528, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (319, 80, to_date('28/01/2020','DD.MM.YYYY'),529, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (320, 354, to_date('15/12/2019','DD.MM.YYYY'),530, 500);
-INSERT INTO Rechnung (RECHNUNGSID, RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (321, 222, to_date('21/03/2020','DD.MM.YYYY'),531, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (150, to_date('12/01/2018','DD.MM.YYYY'),510, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (280, to_date('12/05/2018','DD.MM.YYYY'),511, 500); 
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (750, to_date('22/01/2018','DD.MM.YYYY'),512, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (150, to_date('08/01/2018','DD.MM.YYYY'),513, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (2500, to_date('15/01/2020','DD.MM.YYYY'),514, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (890, to_date('13/07/2018','DD.MM.YYYY'),515, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (250, to_date('30/11/2019','DD.MM.YYYY'),516, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (340, to_date('22/03/2019','DD.MM.YYYY'),517, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (770, to_date('12/05/2018','DD.MM.YYYY'),518, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (860, to_date('12/01/2018','DD.MM.YYYY'),519, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (80, to_date('14/01/2020','DD.MM.YYYY'),520, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (3500, to_date('18/06/2016','DD.MM.YYYY'),521, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (1500, to_date('19/07/2017','DD.MM.YYYY'),522, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (650, to_date('17/10/2018','DD.MM.YYYY'),523, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (450, to_date('12/01/2021','DD.MM.YYYY'),524, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (890, to_date('24/07/2019','DD.MM.YYYY'),525, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (1200, to_date('17/09/2019','DD.MM.YYYY'),526, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (2300, to_date('18/11/2020','DD.MM.YYYY'),527, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (650, to_date('19/06/2021','DD.MM.YYYY'),528, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (80, to_date('28/01/2020','DD.MM.YYYY'),529, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (354, to_date('15/12/2019','DD.MM.YYYY'),530, 500);
+INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
+	VALUES (222, to_date('21/03/2020','DD.MM.YYYY'),531, 500);
 
 
 -----------------------------
 --  INSERT for Bestellung
 -----------------------------
-INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
-	VALUES (301, 107, 1, 223);
+INSERT INTO Bestellung ( LIEFERANTENID, ADRESSID, RECHNUNGSID)
+	VALUES (107, 1, 200);
 
-INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
-	VALUES (302, 101, 2, 222);
+INSERT INTO Bestellung ( LIEFERANTENID, ADRESSID, RECHNUNGSID)
+	VALUES (101, 2, 201);
 
-INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
-	VALUES (303, 101, 3, 205);
+INSERT INTO Bestellung ( LIEFERANTENID, ADRESSID, RECHNUNGSID)
+	VALUES (101, 3, 202);
 
-INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
-	VALUES (304, 104, 4, 206);
+INSERT INTO Bestellung ( LIEFERANTENID, ADRESSID, RECHNUNGSID)
+	VALUES (104, 4, 203);
 
-INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
-	VALUES (305, 105, 5, 207);
+INSERT INTO Bestellung ( LIEFERANTENID, ADRESSID, RECHNUNGSID)
+	VALUES (105, 5, 204);
 
-INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
-	VALUES (306, 106, 6, 208);
+INSERT INTO Bestellung ( LIEFERANTENID, ADRESSID, RECHNUNGSID)
+	VALUES (106, 6, 205);
 
-INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
-	VALUES (307, 107, 7, 209);
+INSERT INTO Bestellung ( LIEFERANTENID, ADRESSID, RECHNUNGSID)
+	VALUES (107, 7, 206);
 
-INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
-	VALUES (308, 108, 8, 210);
+INSERT INTO Bestellung ( LIEFERANTENID, ADRESSID, RECHNUNGSID)
+	VALUES (108, 8, 207);
 
-INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
-	VALUES (309, 103, 9, 224);
+INSERT INTO Bestellung ( LIEFERANTENID, ADRESSID, RECHNUNGSID)
+	VALUES (103, 9, 208);
 	
 		
 
@@ -481,29 +478,28 @@ INSERT INTO Bestellung (BESTELLUNGSID, LIEFERANTENID, ADRESSID, RECHNUNGSID)
 ------------------------------
 --  INSERT for Zimmerbuchung
 ------------------------------
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (1,TO_DATE('12/01/2018','DD/MM/YYYY'),10,204,150);
-
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (2,TO_DATE('12/05/2018','DD/MM/YYYY'),11,301,280);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (3,TO_DATE('22/01/2018','DD/MM/YYYY'),12,302,750);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (4,TO_DATE('08/01/2018','DD/MM/YYYY'),13,303,150);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (5,TO_DATE('15/01/2020','DD/MM/YYYY'),14,304,2500);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (6,TO_DATE('13/07/2018','DD/MM/YYYY'),15,305,890);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (7,TO_DATE('30/11/2019','DD/MM/YYYY'),16,306,250);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (8,TO_DATE('22/03/2019','DD/MM/YYYY'),17,307,340);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (9,TO_DATE('12/05/2018','DD/MM/YYYY'),18,308,770);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (10,TO_DATE('12/01/2018','DD/MM/YYYY'),19,309,860);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (11,TO_DATE('14/01/2020','DD/MM/YYYY'),20,310,80);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (12,TO_DATE('18/06/2016','DD/MM/YYYY'),21,311,3500);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (13,TO_DATE('19/07/2017','DD/MM/YYYY'),22,312,1500);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (14,TO_DATE('17/10/2018','DD/MM/YYYY'),23,313,650);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (15,TO_DATE('12/01/2021','DD/MM/YYYY'),24,314,450);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (16,TO_DATE('24/07/2019','DD/MM/YYYY'),25,315,890);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (17,TO_DATE('17/09/2019','DD/MM/YYYY'),26,316,1200);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (18,TO_DATE('18/11/2020','DD/MM/YYYY'),27,317,2300);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (19,TO_DATE('19/06/2021','DD/MM/YYYY'),28,318,650);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (20,TO_DATE('28/01/2020','DD/MM/YYYY'),29,319,80);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (21,TO_DATE('15/12/2019','DD/MM/YYYY'),30,320,354);
-INSERT INTO Zimmerbuchung (BuchungsID,Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (22,TO_DATE('21/03/2020','DD/MM/YYYY'),31,321,222);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('12/01/2018','DD/MM/YYYY'),10,209,150);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('12/05/2018','DD/MM/YYYY'),11,210,280);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('22/01/2018','DD/MM/YYYY'),12,211,750);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('08/01/2018','DD/MM/YYYY'),13,212,150);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('15/01/2020','DD/MM/YYYY'),14,213,2500);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('13/07/2018','DD/MM/YYYY'),15,214,890);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('30/11/2019','DD/MM/YYYY'),16,215,250);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('22/03/2019','DD/MM/YYYY'),17,216,340);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('12/05/2018','DD/MM/YYYY'),18,217,770);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('12/01/2018','DD/MM/YYYY'),19,218,860);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('14/01/2020','DD/MM/YYYY'),20,219,80);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('18/06/2016','DD/MM/YYYY'),21,220,3500);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('19/07/2017','DD/MM/YYYY'),22,221,1500);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('17/10/2018','DD/MM/YYYY'),23,222,650);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('12/01/2021','DD/MM/YYYY'),24,223,450);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('24/07/2019','DD/MM/YYYY'),25,224,890);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('17/09/2019','DD/MM/YYYY'),26,225,1200);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('18/11/2020','DD/MM/YYYY'),27,226,2300);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('19/06/2021','DD/MM/YYYY'),28,227,650);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('28/01/2020','DD/MM/YYYY'),29,228,80);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('15/12/2019','DD/MM/YYYY'),30,229,354);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('21/03/2020','DD/MM/YYYY'),31,230,222);
 
 
 -------------------------------------
@@ -579,11 +575,11 @@ INSERT INTO Bestelldetails (BestellungsID,WarenID,Anzahl,Preis) VALUES (309,5,17
 --------------------------------
 --  INSERT for Kundenbewertung
 --------------------------------
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (11,1,'Komischer Geruch aber sonst super',2,4);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (24,2,'Genialer Service! Gerne wieder!',15,10);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (28,3,'Hat mir nicht gut gefallen',19,3);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (18,4,'War sehr enttaeuscht. Das Zimmer war nicht sauber.',9,2);
-INSERT INTO Kundenbewertung (PersonID,BewertungsID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (30,5,'Faende den Preis teuer für das klein Einzelzimmer',21,4);	
+INSERT INTO Kundenbewertung (PersonID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (11,'Komischer Geruch aber sonst super',2,4);
+INSERT INTO Kundenbewertung (PersonID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (24,'Genialer Service! Gerne wieder!',15,10);
+INSERT INTO Kundenbewertung (PersonID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (28,'Hat mir nicht gut gefallen',19,3);
+INSERT INTO Kundenbewertung (PersonID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (18,'War sehr enttaeuscht. Das Zimmer war nicht sauber.',9,2);
+INSERT INTO Kundenbewertung (PersonID,Bewertungskommentar,BuchungsID,Bewertung) VALUES (30,'Faende den Preis teuer für das klein Einzelzimmer',21,4);	
 
 
 commit;

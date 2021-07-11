@@ -35,3 +35,6 @@ DROP SEQUENCE abteilungsid_seq;
 DROP SEQUENCE kontoid_seq;
 DROP SEQUENCE bestellungsid_seq;
 DROP SEQUENCE bewertungsid_seq;
+DROP SEQUENCE landid_seq;
+DROP SEQUENCE serviceid_seq;
+DROP SEQUENCE rechnungsid_seq;

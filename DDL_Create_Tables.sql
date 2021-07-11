@@ -652,16 +652,15 @@ SELECT table_name FROM user_tables;
 --  REF CONSTRAINTS FOR TABLE EHEMALIGEMITARBEITER  
 --------------------------------------------------------
 
-  ALTER TABLE "EHEMALIGEMITARBEITER" ADD FOREIGN KEY ("GEHALTSSTUFEID")
+  ALTER TABLE "EHEMALIGEMITARBEITER  " ADD FOREIGN KEY ("GEHALTSSTUFEID")
 	  REFERENCES "GEHALTSSTUFE" ("GEHALTSSTUFEID") ENABLE;
 
-  ALTER TABLE "EHEMALIGEMITARBEITER" ADD FOREIGN KEY ("KONTOID")
+  ALTER TABLE "EHEMALIGEMITARBEITER  " ADD FOREIGN KEY ("KONTOID")
 	  REFERENCES "BANKINFORMATION" ("KONTOID") ENABLE;
 
- ALTER TABLE "EHEMALIGEMITARBEITER" ADD FOREIGN KEY ("ABTEILUNGSID")
+ ALTER TABLE "EHEMALIGEMITARBEITER  " ADD FOREIGN KEY ("ABTEILUNGSID")
 	  REFERENCES "ABTEILUNG" ("ABTEILUNGSID") ENABLE;  
-ALTER TABLE "EHEMALIGEMITARBEITER" ADD FOREIGN KEY ("PERSONID")
-	  REFERENCES "PERSON" ("PERSONID") ENABLE;
+
 
 ---------------------------------------------------------
 --------------- SEQUENCES -------------------------------
@@ -671,13 +670,16 @@ CREATE SEQUENCE adressid_seq START WITH 1;
 CREATE SEQUENCE lieferantenid_seq START WITH 101;
 CREATE SEQUENCE warenid_seq START WITH 1;
 CREATE SEQUENCE warenartid_seq START WITH 1;
+CREATE SEQUENCE landid_seq START WITH 1;
+CREATE SEQUENCE serviceid_seq START WITH 1;
 CREATE SEQUENCE zimmerbuchungsid_seq START WITH 1;
 CREATE SEQUENCE gehaltsstufeid_seq START WITH 10;
 CREATE SEQUENCE abteilungsid_seq START WITH 101;
 CREATE SEQUENCE kontoid_seq START WITH 500;
 CREATE SEQUENCE bestellungsid_seq START WITH 301;
 CREATE SEQUENCE bewertungsid_seq START WITH 1;
-CREATE SEQUENCE rechnungsid_seq START WITH 300;
+CREATE SEQUENCE rechnungsid_seq START WITH 200;
+
 
 
 ---------------------------------------------
@@ -745,6 +747,34 @@ BEGIN
   FROM   dual;
 END;
 /
+
+
+---------- Add LandID  ------------------
+CREATE OR REPLACE TRIGGER t_add_land_id 
+BEFORE INSERT ON Land
+FOR EACH ROW
+
+BEGIN
+  SELECT landid_seq.NEXTVAL
+  INTO   :new.LandID
+  FROM   dual;
+END;
+/
+
+
+
+---------- Add ServiceID  ------------------
+CREATE OR REPLACE TRIGGER t_add_service_id 
+BEFORE INSERT ON Service
+FOR EACH ROW
+
+BEGIN
+  SELECT serviceid_seq.NEXTVAL
+  INTO   :new.ServiceID
+  FROM   dual;
+END;
+/
+
 
 
 ---------- Add ZimmerbuchungsID  ------------------
