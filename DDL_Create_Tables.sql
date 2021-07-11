@@ -661,6 +661,9 @@ SELECT table_name FROM user_tables;
  ALTER TABLE "EHEMALIGEMITARBEITER  " ADD FOREIGN KEY ("ABTEILUNGSID")
 	  REFERENCES "ABTEILUNG" ("ABTEILUNGSID") ENABLE;  
 
+ALTER TABLE "EHEMALIGEMITARBEITER" ADD FOREIGN KEY ("PERSONID")
+	  REFERENCES "PERSON" ("PERSONID") ENABLE;
+
 
 ---------------------------------------------------------
 ---- SEQUENCES --------------------------------------------
