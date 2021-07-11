@@ -388,6 +388,13 @@ SELECT table_name FROM user_tables;
 
   CREATE UNIQUE INDEX "SYS_C0012366" ON "KUNDENBEWERTUNG" ("BEWERTUNGSID") 
   ;
+  
+--------------------------------------------------------
+--  DDL FOR INDEX SYS_C0012367
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C0012367" ON "EHEMALIGEMITARBEITER" ("PERSONID") 
+  ;
 
 
 
@@ -641,8 +648,22 @@ SELECT table_name FROM user_tables;
   ALTER TABLE "KUNDENBEWERTUNG" ADD FOREIGN KEY ("BUCHUNGSID")
 	  REFERENCES "ZIMMERBUCHUNG" ("BUCHUNGSID") ENABLE;
 	  
+--------------------------------------------------------
+--  REF CONSTRAINTS FOR TABLE EHEMALIGEMITARBEITER  
+--------------------------------------------------------
+
+  ALTER TABLE "EHEMALIGEMITARBEITER  " ADD FOREIGN KEY ("GEHALTSSTUFEID")
+	  REFERENCES "GEHALTSSTUFE" ("GEHALTSSTUFEID") ENABLE;
+
+  ALTER TABLE "EHEMALIGEMITARBEITER  " ADD FOREIGN KEY ("KONTOID")
+	  REFERENCES "BANKINFORMATION" ("KONTOID") ENABLE;
+
+ ALTER TABLE "EHEMALIGEMITARBEITER  " ADD FOREIGN KEY ("ABTEILUNGSID")
+	  REFERENCES "ABTEILUNG" ("ABTEILUNGSID") ENABLE;  
+
 
 ---------------------------------------------------------
 ---- SEQUENCES --------------------------------------------
 ----------------------------------------------------------
 CREATE SEQUENCE personid_seq START WITH 1;
+CREATE SEQUENCE adressid_seq START WITH 1;
