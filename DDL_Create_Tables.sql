@@ -537,12 +537,7 @@ SELECT table_name FROM user_tables;
   ALTER TABLE "REISEPASS" ADD FOREIGN KEY ("LANDID")
 	  REFERENCES "LAND" ("LANDID") ENABLE;
  
- --------------------------------------------------------
---  REF CONSTRAINTS FOR TABLE ADRESSE
---------------------------------------------------------
-
-  ALTER TABLE "ADRESSE" ADD FOREIGN KEY ("LANDID")
-	  REFERENCES "LAND" ("LANDID") ENABLE;
+ 
 --------------------------------------------------------
 --  REF CONSTRAINTS FOR TABLE PERSONAL 
 --------------------------------------------------------
@@ -681,11 +676,11 @@ CREATE SEQUENCE abteilungsid_seq START WITH 101;
 CREATE SEQUENCE kontoid_seq START WITH 500;
 CREATE SEQUENCE bestellungsid_seq START WITH 301;
 CREATE SEQUENCE bewertungsid_seq START WITH 1;
-
+CREATE SEQUENCE rechnungsid_seq START WITH 300;
 
 
 ---------------------------------------------
----------- Triggers fÃ¼r IDs -----------------
+---------- Triggers für IDs -----------------
 ---------------------------------------------
 CREATE OR REPLACE TRIGGER t_add_person_id 
 BEFORE INSERT ON person 
@@ -816,7 +811,7 @@ END;
 /
 
 
----------- Add AbteilungsID  ------------------
+---------- Add BewertungsID  ------------------
 CREATE OR REPLACE TRIGGER t_add_bewertungs_id 
 BEFORE INSERT ON Kundenbewertung
 FOR EACH ROW
@@ -824,6 +819,20 @@ FOR EACH ROW
 BEGIN
   SELECT bewertungsid_seq.NEXTVAL
   INTO   :new.BewertungsID
+  FROM   dual;
+END;
+/
+
+
+
+---------- Add RechnungsID  ------------------
+CREATE OR REPLACE TRIGGER t_add_rechnungs_id 
+BEFORE INSERT ON Rechnung
+FOR EACH ROW
+
+BEGIN
+  SELECT rechnungsid_seq.NEXTVAL
+  INTO   :new.RechnungsID
   FROM   dual;
 END;
 /
