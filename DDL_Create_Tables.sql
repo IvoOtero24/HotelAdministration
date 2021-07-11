@@ -652,21 +652,18 @@ SELECT table_name FROM user_tables;
 --  REF CONSTRAINTS FOR TABLE EHEMALIGEMITARBEITER  
 --------------------------------------------------------
 
-  ALTER TABLE "EHEMALIGEMITARBEITER" ADD FOREIGN KEY ("GEHALTSSTUFEID")
+  ALTER TABLE "EHEMALIGEMITARBEITER  " ADD FOREIGN KEY ("GEHALTSSTUFEID")
 	  REFERENCES "GEHALTSSTUFE" ("GEHALTSSTUFEID") ENABLE;
 
-  ALTER TABLE "EHEMALIGEMITARBEITER" ADD FOREIGN KEY ("KONTOID")
+  ALTER TABLE "EHEMALIGEMITARBEITER  " ADD FOREIGN KEY ("KONTOID")
 	  REFERENCES "BANKINFORMATION" ("KONTOID") ENABLE;
 
- ALTER TABLE "EHEMALIGEMITARBEITER" ADD FOREIGN KEY ("ABTEILUNGSID")
+ ALTER TABLE "EHEMALIGEMITARBEITER  " ADD FOREIGN KEY ("ABTEILUNGSID")
 	  REFERENCES "ABTEILUNG" ("ABTEILUNGSID") ENABLE;  
-
-ALTER TABLE "EHEMALIGEMITARBEITER" ADD FOREIGN KEY ("PERSONID")
-	  REFERENCES "PERSON" ("PERSONID") ENABLE;
 
 
 ---------------------------------------------------------
----- SEQUENCES --------------------------------------------
+--------------- SEQUENCES -------------------------------
 ----------------------------------------------------------
 CREATE SEQUENCE personid_seq START WITH 1;
 CREATE SEQUENCE adressid_seq START WITH 1;
@@ -680,6 +677,11 @@ CREATE SEQUENCE kontoid_seq START WITH 500;
 CREATE SEQUENCE bestellungsid_seq START WITH 301;
 CREATE SEQUENCE bewertungsid_seq START WITH 1;
 
+
+
+---------------------------------------------
+---------- Triggers für IDs -----------------
+---------------------------------------------
 CREATE OR REPLACE TRIGGER t_add_person_id 
 BEFORE INSERT ON person 
 FOR EACH ROW
@@ -687,6 +689,136 @@ FOR EACH ROW
 BEGIN
   SELECT personid_seq.NEXTVAL
   INTO   :new.personid
+  FROM   dual;
+END;
+/
+
+
+---------- Add AdressID  ------------------
+CREATE OR REPLACE TRIGGER t_add_adress_id 
+BEFORE INSERT ON adresse
+FOR EACH ROW
+
+BEGIN
+  SELECT adressid_seq.NEXTVAL
+  INTO   :new.adressid
+  FROM   dual;
+END;
+/
+
+
+---------- Add LieferantenID  ------------------
+CREATE OR REPLACE TRIGGER t_add_lieferanten_id 
+BEFORE INSERT ON lieferanten
+FOR EACH ROW
+
+BEGIN
+  SELECT lieferantenid_seq.NEXTVAL
+  INTO   :new.lieferantenid
+  FROM   dual;
+END;
+/
+
+
+---------- Add WarenID  ------------------
+CREATE OR REPLACE TRIGGER t_add_waren_id 
+BEFORE INSERT ON Ware
+FOR EACH ROW
+
+BEGIN
+  SELECT warenid_seq.NEXTVAL
+  INTO   :new.WarenID
+  FROM   dual;
+END;
+/
+
+
+---------- Add WarenArtID  ------------------
+CREATE OR REPLACE TRIGGER t_add_warenart_id 
+BEFORE INSERT ON WarenArt
+FOR EACH ROW
+
+BEGIN
+  SELECT warenartid_seq.NEXTVAL
+  INTO   :new.WarenArtID
+  FROM   dual;
+END;
+/
+
+
+---------- Add ZimmerbuchungsID  ------------------
+CREATE OR REPLACE TRIGGER t_add_buchungs_id 
+BEFORE INSERT ON Zimmerbuchung
+FOR EACH ROW
+
+BEGIN
+  SELECT zimmerbuchungsid_seq.NEXTVAL
+  INTO   :new.buchungsid
+  FROM   dual;
+END;
+/
+
+
+---------- Add GehaltsstufeID  ------------------
+CREATE OR REPLACE TRIGGER t_add_gehaltsstufe_id 
+BEFORE INSERT ON Gehaltsstufe
+FOR EACH ROW
+
+BEGIN
+  SELECT gehaltsstufeid_seq.NEXTVAL
+  INTO   :new.gehaltsstufeID
+  FROM   dual;
+END;
+/
+
+
+---------- Add AbteilungsID  ------------------
+CREATE OR REPLACE TRIGGER t_add_abteilungs_id 
+BEFORE INSERT ON Abteilung
+FOR EACH ROW
+
+BEGIN
+  SELECT abteilungsid_seq.NEXTVAL
+  INTO   :new.AbteilungsID
+  FROM   dual;
+END;
+/
+
+
+---------- Add KontoID  ------------------
+CREATE OR REPLACE TRIGGER t_add_konto_id 
+BEFORE INSERT ON Bankinformation
+FOR EACH ROW
+
+BEGIN
+  SELECT kontoid_seq.NEXTVAL
+  INTO   :new.KontoID
+  FROM   dual;
+END;
+/
+
+
+---------- Add BestellungsID  ------------------
+CREATE OR REPLACE TRIGGER t_add_bestellungs_id 
+BEFORE INSERT ON Bestellung
+FOR EACH ROW
+
+BEGIN
+  SELECT bestellungsid_seq.NEXTVAL
+  INTO   :new.BestellungsID
+  FROM   dual;
+END;
+/
+
+
+---------- Add AbteilungsID  ------------------
+CREATE OR REPLACE TRIGGER t_add_bewertungs_id 
+BEFORE INSERT ON Kundenbewertung
+FOR EACH ROW
+
+BEGIN
+  SELECT bewertungsid_seq.NEXTVAL
+  INTO   :new.BewertungsID
   FROM   dual;
 END;
 /
