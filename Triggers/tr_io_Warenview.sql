@@ -1,17 +1,14 @@
-/*********************************************************************
-/**
-/** Trigger: t_io_waren_view
-/** Type: instead of 
-/** Type Extension: 
-/** Developer: Group 3
-/** Description: 
+/*
+ Trigger: t_io_waren_view
+ Type: instead of 
+ Type Extension: 
+ Developer: Group 3
+ Description: 
 The purpose of this view is to INSERT a new ware, instead of INSERTing INTO the view, we will check IF the warenart exists or not.
 If existed, then we take the WarenArtID and use it to INSERT INTO ware. If not, create a new WarenArt with the highest WarenArtID +1;
 The WarenID of new ware will be the biggest WarenID +1 ; 
 Exception: IF the ware exists already then an exception will be raised. 
-/**
-/*********************************************************************
-
+*/
 
 
 
