@@ -1,12 +1,10 @@
-/*********************************************************************
-/**
-/** Trigger: t_update_rechnungen
-/** Type: After row
-/** Type Extension: update
-/** Developer: Group 3
-/** Description: After an update on Buchungsprice in the table Zimmerbuchung, then the Rechnungssumme in Rechnung will be updated.
-/**
-/*********************************************************************
+/*
+Trigger: t_update_rechnungen
+Type: After row
+Type Extension: update
+Developer: Group 3
+Description: After an update on Buchungsprice in the table Zimmerbuchung, then the Rechnungssumme in Rechnung will be updated.
+*/
 
 
 SET serveroutput on;
