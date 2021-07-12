@@ -1,3 +1,11 @@
+/*
+Procedure Header
+Procedure sp_check_kundenbewertungen
+Out: vorname, nachname, Buchungsdatum, ZimmerArt,ZimmerNr, Bewertungskommentar, Bewertung
+Developer: TCSDeveloper
+Description: Description of PL/SQL procedure
+*/
+
 SET serveroutput ON;
 
 --Create procedure to print all customer feedbacks which are lower than 5; (scale from 1 to 10)
