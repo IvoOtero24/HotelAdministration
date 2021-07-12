@@ -377,9 +377,9 @@ INSERT INTO Lieferanten ( LIEFERANTENNAME, ADRESSID, KONTOID) VALUES ('Boschh', 
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
 	VALUES (20, to_date('15.02.2021','DD.MM.YYYY'),500, 501); 
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (20, to_date('10.07.2020','DD.MM.YYYY'),500, 502); 
+	VALUES (20, to_date('10.07.2021','DD.MM.YYYY'),500, 502); 
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (100, to_date('10.08.2020','DD.MM.YYYY'),500, 503); 
+	VALUES (100, to_date('10.04.2021','DD.MM.YYYY'),500, 503); 
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
 	VALUES (500, to_date('17.05.2021','DD.MM.YYYY'),500, 504); 
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
@@ -389,9 +389,9 @@ INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUS
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
 	VALUES (250, to_date('09.07.2021','DD.MM.YYYY'),500, 507);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (75, to_date('04.08.2020','DD.MM.YYYY'),500, 508); 	
+	VALUES (75, to_date('04.04.2021','DD.MM.YYYY'),500, 508); 	
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (340, to_date('09.07.2020','DD.MM.YYYY'),500, 509); 
+	VALUES (340, to_date('09.07.2021','DD.MM.YYYY'),500, 509); 
 	
 -- Gaeste
 
@@ -406,9 +406,9 @@ INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUS
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
 	VALUES (2500, to_date('15/01/2021','DD.MM.YYYY'),514, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (890, to_date('13/07/2020','DD.MM.YYYY'),515, 500);
+	VALUES (890, to_date('13/07/2021','DD.MM.YYYY'),515, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (250, to_date('30/11/2020','DD.MM.YYYY'),516, 500);
+	VALUES (250, to_date('30/03/2021','DD.MM.YYYY'),516, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
 	VALUES (340, to_date('22/03/2021','DD.MM.YYYY'),517, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
@@ -420,23 +420,23 @@ INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUS
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
 	VALUES (3500, to_date('18/06/2021','DD.MM.YYYY'),521, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (1500, to_date('19/07/2020','DD.MM.YYYY'),522, 500);
+	VALUES (1500, to_date('19/07/2021','DD.MM.YYYY'),522, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (650, to_date('17/10/2020','DD.MM.YYYY'),523, 500);
+	VALUES (650, to_date('17/02/2021','DD.MM.YYYY'),523, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
 	VALUES (450, to_date('12/01/2021','DD.MM.YYYY'),524, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (890, to_date('24/07/2020','DD.MM.YYYY'),525, 500);
+	VALUES (890, to_date('24/07/2021','DD.MM.YYYY'),525, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (1200, to_date('17/09/2020','DD.MM.YYYY'),526, 500);
+	VALUES (1200, to_date('17/02/2021','DD.MM.YYYY'),526, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (2300, to_date('18/11/2020','DD.MM.YYYY'),527, 500);
+	VALUES (2300, to_date('18/04/2021','DD.MM.YYYY'),527, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
 	VALUES (650, to_date('19/06/2021','DD.MM.YYYY'),528, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
 	VALUES (80, to_date('28/01/2021','DD.MM.YYYY'),529, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
-	VALUES (354, to_date('15/12/2020','DD.MM.YYYY'),530, 500);
+	VALUES (354, to_date('15/04/2021','DD.MM.YYYY'),530, 500);
 INSERT INTO Rechnung ( RECHNUNGSSUMME, AUSSTELLUNGSDATUM, EMPFAENGERKONTOID, AUSSTELLERKONTOID)
 	VALUES (222, to_date('21/03/2021','DD.MM.YYYY'),531, 500);
 
@@ -483,50 +483,50 @@ INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VAL
 INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('22/02/2021','DD/MM/YYYY'),12,211,750);
 INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('08/02/2021','DD/MM/YYYY'),13,212,150);
 INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('15/01/2021','DD/MM/YYYY'),14,213,2500);
-INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('13/07/2020','DD/MM/YYYY'),15,214,890);
-INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('30/11/2020','DD/MM/YYYY'),16,215,250);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('13/07/2021','DD/MM/YYYY'),15,214,890);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('30/03/2021','DD/MM/YYYY'),16,215,250);
 INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('22/03/2021','DD/MM/YYYY'),17,216,340);
 INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('12/05/2021','DD/MM/YYYY'),18,217,770);
 INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('12/01/2021','DD/MM/YYYY'),19,218,860);
 INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('14/04/2021','DD/MM/YYYY'),20,219,80);
 INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('18/06/2021','DD/MM/YYYY'),21,220,3500);
-INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('19/07/2020','DD/MM/YYYY'),22,221,1500);
-INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('17/10/2020','DD/MM/YYYY'),23,222,650);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('19/07/2021','DD/MM/YYYY'),22,221,1500);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('17/02/2021','DD/MM/YYYY'),23,222,650);
 INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('12/01/2021','DD/MM/YYYY'),24,223,450);
-INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('24/07/2020','DD/MM/YYYY'),25,224,890);
-INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('17/09/2020','DD/MM/YYYY'),26,225,1200);
-INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('18/11/2020','DD/MM/YYYY'),27,226,2300);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('24/07/2021','DD/MM/YYYY'),25,224,890);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('17/02/2021','DD/MM/YYYY'),26,225,1200);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('18/04/2021','DD/MM/YYYY'),27,226,2300);
 INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('19/06/2021','DD/MM/YYYY'),28,227,650);
 INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('28/01/2021','DD/MM/YYYY'),29,228,80);
-INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('15/12/2020','DD/MM/YYYY'),30,229,354);
-INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('21/03/2020','DD/MM/YYYY'),31,230,222);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('15/04/2021','DD/MM/YYYY'),30,229,354);
+INSERT INTO Zimmerbuchung (Buchungsdatum,PersonID,RechnungsID,Buchungspreis) VALUES (TO_DATE('21/03/2021','DD/MM/YYYY'),31,230,222);
 
 
 -------------------------------------
 --  INSERT for Zimmerbuchungsdetails
 -------------------------------------
 
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (1,1,TO_DATE('12/01/2019','DD/MM/YYYY'),TO_DATE('14/01/2019','DD/MM/YYYY'),2,1,100);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (17,2,TO_DATE('12/06/2018','DD/MM/YYYY'),TO_DATE('17/06/2018','DD/MM/YYYY'),5,1,250);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (1,3,TO_DATE('15/08/2018','DD/MM/YYYY'),TO_DATE('18/08/2018','DD/MM/YYYY'),3,1,450);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (3,4,TO_DATE('12/01/2018','DD/MM/YYYY'),TO_DATE('14/01/2018','DD/MM/YYYY'),2,1,100);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (13,5,TO_DATE('07/05/2020','DD/MM/YYYY'),TO_DATE('12/05/2020','DD/MM/YYYY'),5,1,2250);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (10,6,TO_DATE('05/08/2018','DD/MM/YYYY'),TO_DATE('14/08/2018','DD/MM/YYYY'),2,1,700);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (18,7,TO_DATE('17/01/2020','DD/MM/YYYY'),TO_DATE('18/01/2020','DD/MM/YYYY'),1,1,180);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (21,8,TO_DATE('22/03/2019','DD/MM/YYYY'),TO_DATE('28/03/2019','DD/MM/YYYY'),6,1,300);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (6,9,TO_DATE('12/05/2018','DD/MM/YYYY'),TO_DATE('16/05/2018','DD/MM/YYYY'),4,1,560);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (5,10,TO_DATE('15/09/2018','DD/MM/YYYY'),TO_DATE('22/09/2018','DD/MM/YYYY'),7,1,686);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (1,1,TO_DATE('12/01/2021','DD/MM/YYYY'),TO_DATE('14/01/2021','DD/MM/YYYY'),2,1,100);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (17,2,TO_DATE('12/06/2021','DD/MM/YYYY'),TO_DATE('17/06/2021','DD/MM/YYYY'),5,1,250);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (1,3,TO_DATE('15/01/2021','DD/MM/YYYY'),TO_DATE('18/08/2020','DD/MM/YYYY'),3,1,450);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (3,4,TO_DATE('12/01/2021','DD/MM/YYYY'),TO_DATE('14/01/2021','DD/MM/YYYY'),2,1,100);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (13,5,TO_DATE('07/05/2021','DD/MM/YYYY'),TO_DATE('12/05/2021','DD/MM/YYYY'),5,1,2250);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (10,6,TO_DATE('05/08/2020','DD/MM/YYYY'),TO_DATE('14/08/2020','DD/MM/YYYY'),2,1,700);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (18,7,TO_DATE('17/01/2021','DD/MM/YYYY'),TO_DATE('18/01/2021','DD/MM/YYYY'),1,1,180);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (21,8,TO_DATE('22/03/2021','DD/MM/YYYY'),TO_DATE('28/03/2021','DD/MM/YYYY'),6,1,300);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (6,9,TO_DATE('12/05/2021','DD/MM/YYYY'),TO_DATE('16/05/2021','DD/MM/YYYY'),4,1,560);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (5,10,TO_DATE('15/09/2020','DD/MM/YYYY'),TO_DATE('22/09/2020','DD/MM/YYYY'),7,1,686);
 INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (1,11,TO_DATE('20/08/2020','DD/MM/YYYY'),TO_DATE('23/08/2020','DD/MM/YYYY'),1,1,50);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (19,12,TO_DATE('22/06/2016','DD/MM/YYYY'),TO_DATE('29/06/2016','DD/MM/YYYY'),7,2,3150);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (25,13,TO_DATE('14/11/2017','DD/MM/YYYY'),TO_DATE('20/11/2017','DD/MM/YYYY'),6,2,1176);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (18,14,TO_DATE('18/10/2018','DD/MM/YYYY'),TO_DATE('21/10/2018','DD/MM/YYYY'),3,1,540);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (19,12,TO_DATE('22/06/2021','DD/MM/YYYY'),TO_DATE('29/06/2021','DD/MM/YYYY'),7,2,3150);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (25,13,TO_DATE('14/11/2020','DD/MM/YYYY'),TO_DATE('20/11/2020','DD/MM/YYYY'),6,2,1176);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (18,14,TO_DATE('18/10/2020','DD/MM/YYYY'),TO_DATE('21/10/2020','DD/MM/YYYY'),3,1,540);
 INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (19,15,TO_DATE('19/05/2021','DD/MM/YYYY'),TO_DATE('20/05/2021','DD/MM/YYYY'),1,1,450);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (27,16,TO_DATE('18/08/2019','DD/MM/YYYY'),TO_DATE('23/08/2019','DD/MM/YYYY'),5,1,700);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (7,17,TO_DATE('13/01/2020','DD/MM/YYYY'),TO_DATE('20/01/2020','DD/MM/YYYY'),7,1,980);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (27,16,TO_DATE('18/08/2020','DD/MM/YYYY'),TO_DATE('23/08/2020','DD/MM/YYYY'),5,1,700);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (7,17,TO_DATE('13/01/2021','DD/MM/YYYY'),TO_DATE('20/01/2021','DD/MM/YYYY'),7,1,980);
 INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (10,18,TO_DATE('23/11/2020','DD/MM/YYYY'),TO_DATE('26/11/2020','DD/MM/YYYY'),3,2,2100);
 INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (8,19,TO_DATE('21/06/2021','DD/MM/YYYY'),TO_DATE('25/06/2021','DD/MM/YYYY'),4,1,560);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (16,20,TO_DATE('30/03/2020','DD/MM/YYYY'),TO_DATE('31/03/2020','DD/MM/YYYY'),1,1,50);
-INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (12,21,TO_DATE('16/12/2019','DD/MM/YYYY'),TO_DATE('19/12/2019','DD/MM/YYYY'),3,1,294);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (16,20,TO_DATE('30/03/2021','DD/MM/YYYY'),TO_DATE('31/03/2021','DD/MM/YYYY'),1,1,50);
+INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (12,21,TO_DATE('16/12/2020','DD/MM/YYYY'),TO_DATE('19/12/2020','DD/MM/YYYY'),3,1,294);
 INSERT INTO Zimmerbuchungsdetails (Zimmernr,BuchungsID,CheckIn,CheckOut,DauerTagen,Anzahl,Preis) VALUES (15,22,TO_DATE('03/07/2020','DD/MM/YYYY'),TO_DATE('07/07/2020','DD/MM/YYYY'),4,1,200);
 
 
