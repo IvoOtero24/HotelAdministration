@@ -12,7 +12,7 @@ namespace HotelAdministration.Model
             DateTime checkInTime, DateTime checkOutTime, string zimmerArt, int zimmerNr)
         {
             this.BuchungsID = buchungsID;
-            this.BuchungsDatum = buchungsDatum;
+            this.BuchungsDatum = buchungsDatum.ToShortDateString();
             this.PersonID = personID;
             this.Vorname = vorname;
             this.Nachname = nachname;
@@ -24,7 +24,7 @@ namespace HotelAdministration.Model
         }
 
         public string BuchungsID { get; private set; }
-        public DateTime BuchungsDatum { get; private set; }
+        public string BuchungsDatum { get; private set; }
         public string PersonID { get; private set; }
         public string Vorname { get; private set; }
         public string Nachname { get; private set; }

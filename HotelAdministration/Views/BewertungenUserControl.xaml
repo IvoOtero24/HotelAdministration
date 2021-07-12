@@ -10,35 +10,25 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="5*"/>
+            <RowDefinition Height="7*"/>
         </Grid.RowDefinitions>
 
         <!-- Title -->
-        <TextBlock Grid.Row="0" Grid.Column="0" Text="Mitarbeiterübersicht" FontSize="22" VerticalAlignment="Center" Margin="10"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Bewertungsübersicht" FontSize="22" VerticalAlignment="Center" Margin="10"/>
 
         <!-- Filer-->
         <StackPanel Grid.Row="1">
             <TextBlock Text="Filtering: " FontSize="17" VerticalAlignment="Top" Margin="10"/>
             <StackPanel Orientation="Horizontal">
-                <Button Content="Schlechte Bewertungen anzeigen!" Margin="25,0"/>
-                <Label Content="Filter nach Bewertungskala: " Margin="8,0" />
-                <ComboBox Width="80">
-                    <ComboBoxItem Name="a">1</ComboBoxItem>
-                    <ComboBoxItem Name="b">2</ComboBoxItem>
-                    <ComboBoxItem Name="c">3</ComboBoxItem>
-                    <ComboBoxItem Name="d">4</ComboBoxItem>
-                    <ComboBoxItem Name="e">5</ComboBoxItem>
-                    <ComboBoxItem Name="f">6</ComboBoxItem>
-                    <ComboBoxItem Name="g">7</ComboBoxItem>
-                    <ComboBoxItem Name="h">8</ComboBoxItem>
-                    <ComboBoxItem Name="i">9</ComboBoxItem>
-                    <ComboBoxItem Name="j">10</ComboBoxItem>
-                </ComboBox>
+                <Button Content="Alle Bewertungen " Margin="15,0,100,0" Command="{Binding AlleBewertungenAnzeigenCommand}"/>
+                <Button Content="Schlechte Bewertungen anzeigen!" Margin="25,0, 0, 0" Command="{Binding SchlechteBewertungenAnzeigenCommand}"/>
+                <Label Content="--> alle Bewertungen mit Score unter 5"/>
             </StackPanel>
             
             <!-- Mitarbeiterübersicht -->
             <TextBlock Text="Liste aller Bewertungen: " Margin="10,12" FontSize="17"/>
-            <DataGrid AlternatingRowBackground="Lavender" Margin="5" ItemsSource="{Binding Bewertungen}" AutoGenerateColumns="True">
+            <DataGrid AlternatingRowBackground="Lavender"  Margin="20,5" AutoGenerateColumns="True"  HorizontalAlignment="Left" Width="720" Height="200"
+                      ItemsSource="{Binding DisplayedBewertungen}" VerticalScrollBarVisibility="Visible">
             </DataGrid>
 
         </StackPanel>

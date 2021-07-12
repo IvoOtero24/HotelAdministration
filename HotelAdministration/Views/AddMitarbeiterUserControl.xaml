@@ -1,48 +1,120 @@
-﻿<UserControl x:Class="HotelAdministration.Views.AddMitarbeiterUserControl"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:HotelAdministration.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-             DataContext="{Binding Mitarbeiter, Source={StaticResource Locator}}">
+﻿<UserControl
+    x:Class="HotelAdministration.Views.AddMitarbeiterUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:HotelAdministration.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="500"
+    d:DesignWidth="800"
+    DataContext="{Binding Mitarbeiter, Source={StaticResource Locator}}"
+    mc:Ignorable="d">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="12*" />
         </Grid.RowDefinitions>
 
-        <!-- Title -->
-        <TextBlock Grid.Row="0" Grid.Column="0" Text="Mitarbeiterübersicht" FontSize="22" VerticalAlignment="Center" Margin="10"/>
+        <!--  Title  -->
+        <TextBlock
+            Grid.Row="0"
+            Grid.Column="0"
+            Margin="10"
+            VerticalAlignment="Center"
+            FontSize="22"
+            Text="Mitarbeiterübersicht" />
 
-        <!-- Add Mitarbeiter -->
+        <!--  Add Mitarbeiter  -->
         <StackPanel Grid.Row="1">
-        <TextBlock Grid.Row="1" Grid.Column="0" Text="Neuen mitarbeiter einfügen: " FontSize="17" VerticalAlignment="Top" Margin="10"/>
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="0"
+                Margin="5"
+                VerticalAlignment="Top"
+                FontSize="17"
+                Text="Neuen mitarbeiter einfügen: " />
             <StackPanel Orientation="Horizontal">
-                <Label Content="Vorname: " /> <TextBox Width="80" />
-                <Label Content="Nachname: " Margin="5,0,0,0"/> <TextBox Width="80" />
-                <Label Content="Geburtsdatum: " Margin="5,0,0,0"/> <DatePicker/>
-                <Label Content="SVN" Margin="5,0,0,0"/> <TextBox Width="60" />
-                <Label Content="Gehalt:" Margin="5,0,0,0"/> <TextBox Width="75" />
+                <Label Content="Vorname: " />
+                <TextBox Width="80" Text="{Binding Vorname, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="Nachname: " />
+                <TextBox Width="80" Text="{Binding Nachname, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="Geburtsdatum: " />
+                <DatePicker Text="{Binding GebDatum, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="SVN" />
+                <TextBox Width="60" Text="{Binding SVN, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="Gehaltstufe:" />
+                <TextBox Width="75" Text="{Binding Gehaltsstufe, UpdateSourceTrigger=LostFocus}" />
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0,5" HorizontalAlignment="Center">
-                <Label Content="Strasse: " /><TextBox Width="100" />
-                <Label Content="Hausnr: " Margin="5,0,0,0"/><TextBox Width="40" />
-                <Label Content="Tür Nr: " Margin="5,0,0,0"/> <TextBox Width="40"/>
-                <Label Content="PLZ" Margin="5,0,0,0"/><TextBox Width="60" />
-                <Label Content="Ort:" Margin="5,0,0,0"/><TextBox Width="75" />
-                <Label Content="Land:" Margin="5,0,0,0"/><TextBox Width="75" />
+            <StackPanel
+                Margin="5,5,0,5"
+                HorizontalAlignment="Left"
+                Orientation="Horizontal">
+                <Label Content="Strasse: " />
+                <TextBox Width="100" Text="{Binding Strasse, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="Hausnr: " />
+                <TextBox Width="40" Text="{Binding HausNr, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="Tür Nr: " />
+                <TextBox Width="40" Text="{Binding TuerNr, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="PLZ" />
+                <TextBox Width="30" Text="{Binding PLZ, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="Ort:" />
+                <TextBox Width="75" Text="{Binding Ort, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="Land:" />
+                <TextBox Width="75" Text="{Binding Land, UpdateSourceTrigger=LostFocus}" />
+                <Label Content="Abteilung" />
+                <TextBox Width="100" Text="{Binding Abteilung, UpdateSourceTrigger=LostFocus}" />
             </StackPanel>
+            <StackPanel
+                Margin="5,5,0,5"
+                HorizontalAlignment="Left"
+                Orientation="Horizontal">
+                <Label Content="KontoNr: " />
+                <TextBox Width="70" Text="{Binding KontoNr, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="IBAN: " />
+                <TextBox Width="70" Text="{Binding IBAN, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="Bankname: " />
+                <TextBox Width="80" Text="{Binding BankName, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="Email: " />
+                <TextBox Width="90" Text="{Binding Email, UpdateSourceTrigger=LostFocus}" />
+                <Label Margin="5,0,0,0" Content="Tel. Nummer: " />
+                <TextBox Width="80" Text="{Binding TelNummer, UpdateSourceTrigger=LostFocus}" />
+            </StackPanel>
+            <Button
+                Width="100"
+                Height="25"
+                Margin="10,5,30,5"
+                HorizontalAlignment="Right"
+                Background="Lavender"
+                Command="{Binding MitarbeiterAddCommand}"
+                Content="Hinzüfungen" />
 
-        <!-- Mitarbeiterübersicht -->
-        <TextBlock Text="Liste aller Mitarbeiter: " Margin="10,12" FontSize="17"/>
-        <DataGrid AlternatingRowBackground="Lavender" Margin="5" AutoGenerateColumns="True" ItemsSource="{Binding Mitarbeiterliste}">
-        </DataGrid>
+            <!--  Mitarbeiterübersicht  -->
+            <TextBlock
+                Margin="10,0"
+                FontSize="15"
+                Text="Liste aller Mitarbeiter: " />
+            <DataGrid
+                Width="790"
+                Height="240"
+                HorizontalAlignment="Left"
+                AlternatingRowBackground="Lavender"
+                AutoGenerateColumns="True"
+                ItemsSource="{Binding Mitarbeiterliste}"
+                SelectedItem="{Binding SelectedMitarbeiter}"
+                VerticalScrollBarVisibility="Visible" />
+
+            <Button
+                Width="200"
+                Height="25"
+                Margin="30,10"
+                HorizontalAlignment="Right"
+                Background="LightCoral"
+                Command="{Binding MitarbeiterDeleteCommand}"
+                Content="Ausgewähten Mitarbeiter löschen" />
 
         </StackPanel>
 
 
 
-</Grid>
+    </Grid>
 </UserControl>

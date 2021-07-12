@@ -1,14 +1,17 @@
-﻿<Window x:Class="HotelAdministration.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:HotelAdministration"
-        xmlns:vm="clr-namespace:HotelAdministration.ViewModel"
-        xmlns:views="clr-namespace:HotelAdministration.Views"
-        mc:Ignorable="d"
-        DataContext="{Binding Main, Source={StaticResource Locator}}"
-        Title="MainWindow" Height="550" Width="1150">
+﻿<Window
+    x:Class="HotelAdministration.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:HotelAdministration"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:HotelAdministration.Views"
+    xmlns:vm="clr-namespace:HotelAdministration.ViewModel"
+    Title="MainWindow"
+    Width="1150"
+    Height="650"
+    DataContext="{Binding Main, Source={StaticResource Locator}}"
+    mc:Ignorable="d">
 
     <Window.Resources>
         <Style x:Key="StyledButton" TargetType="Button">
@@ -26,58 +29,94 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="7*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="9*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="9*" />
         </Grid.RowDefinitions>
 
 
         <StackPanel Grid.Row="0" Grid.ColumnSpan="2">
-            <Label Content="Hotel Administration Central" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" />
-            <Border BorderThickness="0,0,0,4" BorderBrush="#ead9fa">
+            <Label
+                HorizontalAlignment="Center"
+                Content="Hotel Administration Central"
+                FontSize="20"
+                FontWeight="Bold" />
+            <Border BorderBrush="#ead9fa" BorderThickness="0,0,0,4">
                 <TextBlock
-                    Text="Bitte wählen sie einer der folgenden Übersichten, um ihre Hotel-Datenbank zu verwalten: "
-                    HorizontalAlignment="Center" Margin="0,0,0,5" />
+                    Margin="0,0,0,5"
+                    HorizontalAlignment="Center"
+                    Text="Bitte wählen sie einer der folgenden Übersichten, um ihre Hotel-Datenbank zu verwalten: " />
             </Border>
         </StackPanel>
 
-        <!-- List of all actions -->
-        <StackPanel HorizontalAlignment="Center" Orientation="Vertical" Margin="0,30,0,0" Grid.Row="1" Grid.Column="0" VerticalAlignment="Top">
-            <Button Content="Mitarbeiterübersicht" Command="{Binding SwitchToMitarbeiterViewCommand}"
-                    HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
-            <Button Content="Bewertungen" Command="{Binding SwitchToBewertungenViewCommand}"
-                    HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
-            <Button Content="Buchungen" Command="{Binding SwitchToBuchungenViewCommand}"
-                    HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
-            <Button Content="Gastübersicht" Command="{Binding SwitchToGastViewCommand}"
-                    HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
-            <Button Content="Fällige Rechnungen" Command="{Binding SwitchToRechnungViewCommand}"
-                    HorizontalAlignment="Center" Style="{StaticResource StyledButton}" Margin="0,0,0,15" />
+        <!--  List of all actions  -->
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="0"
+            Margin="0,30,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Orientation="Vertical">
+            <Button
+                Margin="0,0,0,15"
+                HorizontalAlignment="Center"
+                Command="{Binding SwitchToMitarbeiterViewCommand}"
+                Content="Mitarbeiterübersicht"
+                Style="{StaticResource StyledButton}" />
+            <Button
+                Margin="0,0,0,15"
+                HorizontalAlignment="Center"
+                Command="{Binding SwitchToBewertungenViewCommand}"
+                Content="Bewertungen"
+                Style="{StaticResource StyledButton}" />
+            <Button
+                Margin="0,0,0,15"
+                HorizontalAlignment="Center"
+                Command="{Binding SwitchToBuchungenViewCommand}"
+                Content="Buchungen"
+                Style="{StaticResource StyledButton}" />
+            <Button
+                Margin="0,0,0,15"
+                HorizontalAlignment="Center"
+                Command="{Binding SwitchToGastViewCommand}"
+                Content="Gastübersicht"
+                Style="{StaticResource StyledButton}" />
+            <Button
+                Margin="0,0,0,15"
+                HorizontalAlignment="Center"
+                Command="{Binding SwitchToRechnungViewCommand}"
+                Content="Fällige Rechnungen"
+                Style="{StaticResource StyledButton}" />
         </StackPanel>
 
 
-        <!-- Placeholder for different views -->
-        <Border Grid.Row="1" Grid.Column="1" Margin="5" BorderBrush="#ead9fa" BorderThickness="2" CornerRadius="3">
+        <!--  Placeholder for different views  -->
+        <Border
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="5"
+            BorderBrush="#ead9fa"
+            BorderThickness="2"
+            CornerRadius="3">
             <ContentControl Content="{Binding CurrentView}">
                 <ContentControl.Resources>
                     <DataTemplate DataType="{x:Type vm:AddMitarbeiterViewModel}">
-                        <views:AddMitarbeiterUserControl/>
+                        <views:AddMitarbeiterUserControl />
                     </DataTemplate>
                     <DataTemplate DataType="{x:Type vm:BewertungenViewModel}">
-                        <views:BewertungenUserControl/>
+                        <views:BewertungenUserControl />
                     </DataTemplate>
                     <DataTemplate DataType="{x:Type vm:BuchungsübersichtViewModel}">
-                        <views:BuchungsübersichtUserControl/>
+                        <views:BuchungsübersichtUserControl />
                     </DataTemplate>
                     <DataTemplate DataType="{x:Type vm:GastübersichtViewModel}">
-                        <views:GastUebersichtUserControl/>
+                        <views:GastUebersichtUserControl />
                     </DataTemplate>
                     <DataTemplate DataType="{x:Type vm:RechnungenViewModel}">
-                        <views:RechnungenFaelligUserControl/>
+                        <views:RechnungenFaelligUserControl />
                     </DataTemplate>
                 </ContentControl.Resources>
             </ContentControl>

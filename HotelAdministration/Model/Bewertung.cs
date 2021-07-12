@@ -8,19 +8,26 @@ namespace HotelAdministration.Model
 {
     public class Bewertung
     {
-        public Bewertung(string personId, string bewertungsId, string bewertungskommentar, string buchungsId, int bewertungScore)
+        public Bewertung(int personId, string vorname, string nachname, DateTime buchungsdatum, 
+                        string zimmerart, int zimmernr, string bewertungskommentar, int bewertungScore)
         {
             PersonId = personId;
-            BewertungsId = bewertungsId;
+            Vorname = vorname;
+            Nachname = nachname;
+            Buchungsdatum = buchungsdatum.ToShortDateString();
+            ZimmerArt = zimmerart;
+            ZimmerNr = zimmernr;
             Bewertungskommentar = bewertungskommentar;
-            BuchungsId = buchungsId;
             BewertungScore = bewertungScore;
         }
 
-        public string PersonId { get; private set; }
-        public string BewertungsId { get; private set; }
+        public int PersonId { get; private set; }
+        public string Vorname { get; private set; }
+        public string Nachname { get; private set; }
+        public string Buchungsdatum { get; private set; }
+        public string ZimmerArt { get; private set; }
+        public int ZimmerNr { get; private set; }
         public string Bewertungskommentar { get; private set; }
-        public string BuchungsId { get; private set; }
         public int BewertungScore { get; private set; }
     }
 }

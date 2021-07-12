@@ -12,16 +12,16 @@ namespace HotelAdministration.Model
         {
             this.RechnungsID = rechnungsID;
             this.Summe = summe;
-            this.AustellungsDatum = ausstellungsDatum;
+            this.AustellungsDatum = ausstellungsDatum.ToShortDateString();
             this.EmpfaengerKontoID = empfaengerKontoID;
             this.AusstellerKontoID = ausstellerKontoID;
-            this.Faelligkeitsdatum = ausstellungsDatum.AddDays(15);
+            this.Faelligkeitsdatum = ausstellungsDatum.AddDays(15).ToShortDateString();
         }
         public string RechnungsID { get; private set; }
         public double Summe { get; private set; }
-        public DateTime AustellungsDatum { get; private set; }
+        public string AustellungsDatum { get; private set; }
         public string EmpfaengerKontoID { get; private set; }
         public string AusstellerKontoID { get; private set; }
-        public DateTime Faelligkeitsdatum { get; private set; }
+        public string Faelligkeitsdatum { get; private set; }
     }
 }
