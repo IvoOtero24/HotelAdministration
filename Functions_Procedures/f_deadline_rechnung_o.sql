@@ -1,6 +1,15 @@
--------------------------------
---Function 1: Deadline-Rechnung
--------------------------------
+/*********************************************************************
+/**
+/** Function: f_deadline_rechnung_o
+/** In: no input 
+/** Returns: a table containing all rechnungen, which must be paid in the next 3 weeks
+/** Developer: TCSDeveloper
+/** Description: The function searches for Rechnungen, which must be paid in the next days or are already  (payment due date to suppliers is 20 Days)
+/**
+/*********************************************************************/
+
+
+-- set up for return object
 CREATE OR REPLACE TYPE DeadlineTableObj AS OBJECT
 (
   RechnungsID VARCHAR(50),
@@ -17,7 +26,7 @@ CREATE OR REPLACE TYPE DeadlineTable AS TABLE OF DeadlineTableObj;
 
 
 -- Function 
-CREATE OR REPLACE Function DeadlineRechnung
+CREATE OR REPLACE Function f_deadline_rechnung_o
   RETURN DeadlineTable
   PIPELINED
 AS 
@@ -25,7 +34,8 @@ AS
   IS
     SELECT RechnungsID, Rechnungssumme, Ausstellungsdatum, AusstellerkontoID, EmpfaengerkontoID
     FROM Rechnung
-    WHERE (sysdate - Ausstellungsdatum) > 15
+    WHERE (Ausstellungsdatum + 20) > (sysdate)
+    AND (Ausstellungsdatum + 20) < (sysdate + 21)
     AND EmpfaengerKontoID = 500;
     
   BEGIN
@@ -42,8 +52,11 @@ AS
 /
 
 
-SELECT * FROM TABLE(DeadlineRechnung);
 
+-------------------
+-- execute procedure
+-------------------
+SELECT * FROM TABLE(f_deadline_rechnung_o);
 SELECT * FROM Rechnung;
 
       
