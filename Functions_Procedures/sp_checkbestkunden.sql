@@ -1,3 +1,14 @@
+
+Procedure Header
+/*
+
+Procedure sp_checkbestkunden
+Out: PersonID,Vorname, Nachname of 10 people who pay most and RechnungsSumme, Ausstellungsdatum of the coresponding Rechnung.
+Developer: Group3
+Description: This procedure is to print out 10 customers who have the biggest Rechnungsumme in the last period.
+
+*/
+
 SET serveroutput ON;
 
 --Create procedure to print the list of 10 customers who pay most.
