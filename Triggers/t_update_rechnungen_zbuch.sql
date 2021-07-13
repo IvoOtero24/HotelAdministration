@@ -15,7 +15,7 @@ CREATE OR REPLACE TRIGGER t_update_rechnungen_zbuch
 
 BEGIN
   
-  -- check for person having already 2 bags
+  
   UPDATE Rechnung
   SET Rechnungssumme = :new.Buchungspreis
   WHERE RechnungsID = :new.RechnungsID;
