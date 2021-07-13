@@ -9,7 +9,7 @@
 /** Dies geschieht dadurch, dass die Rechnungsendsummen innerhalb des vorgegebenen 
 /** Monates und Jahres addiert werden und dann ausgegeben. 
 /**
-/*********************************************************************
+/*********************************************************************/
 
 
 set serveroutput on;
