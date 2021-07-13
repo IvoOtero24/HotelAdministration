@@ -9,7 +9,7 @@
 /**              z.B. die Rechnungen, die er/sie ausgestellt hat, nicht gelöscht werden müssen und später noch gefunden werden können. 
 /**              Und in der Tabelle soll dokumentiert werden, wann der Mitarbeiter das Hotel verlassen hat.
 /**
-/*********************************************************************
+/*********************************************************************/
 
 
 set serveroutput on;
