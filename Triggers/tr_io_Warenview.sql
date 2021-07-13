@@ -1,14 +1,16 @@
-/*
+/*********************************************************************
  Trigger: t_io_waren_view
  Type: instead of 
  Type Extension: 
  Developer: Group 3
  Description: 
-The purpose of this view is to INSERT a new ware, instead of INSERTing INTO the view, we will check IF the warenart exists or not.
-If existed, then we take the WarenArtID and use it to INSERT INTO ware. If not, create a new WarenArt with the highest WarenArtID +1;
-The WarenID of new ware will be the biggest WarenID +1 ; 
-Exception: IF the ware exists already then an exception will be raised. 
-*/
+ Die Ansicht Warenview enthält Warenname, WarenArtName und Einzelpreis. 
+ Der Zweck dieses Triggers besteht darin, dass wir, anstatt neue Zeilen direkt in die Ansicht Warenview einzufügen, die Werte in die Tabelle Ware und WarenArt einfügen (falls erforderlich).
+ Zuerst suchen wir in der Tabelle WarenArtName, um zu prüfen, ob die WarenArt bereits existiert. Falls ja, speichern wir diese WarenArtID zur weiteren Verwendung.
+ Falls nicht, wird ein neuer Eintrag in die Tabelle WarenArt eingefügt. Die neue ID ist die max WarenArtID +1.
+ Nun wird in die Tabelle Ware eine neue Zeile mit WarenID, neuem WarenName, neuer WarenArtID und neuem Einzelpreis eingefügt. ebenso ist WarenID hier die maximale WarenID+1
+
+************************************************************************/
 
 
 
