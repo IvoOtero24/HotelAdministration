@@ -1,14 +1,13 @@
-/*********************************************************************
-/**
-/** Function: f_check_beste_kunden_o
-/** In: no input parameter
-/** Returns: a Table object with the 10 most "loyal" 
-             customer (ones who paid the most)
-/** Developer: TCSDeveloper
-/** Description: The function searches fr the 10 customers who spent
-/**              the most in bookings and extras in the hotel
-/**
-/*********************************************************************/
+/************************************
+Function: f_check_beste_kunden_o
+In: no input parameter
+ Returns: ein Tabellenobjekt mit den 10 "treuesten"
+              Kunde (diejenigen, die am meisten bezahlt haben)
+Developer: Group3
+Description: Ziel diese Prozedur ist es, die PersonID, Vornamen, Nachnamen, Austellungsdatum, 
+ und Rechnungssumme des 10 besten Kunden mit der höchsten Rechnungssumme
+ in der letzten Periode zu ermitteln.
+**************************************/
 
 
 CREATE OR REPLACE TYPE BesteKundenObj AS OBJECT
