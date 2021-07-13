@@ -2,9 +2,10 @@
 /**
 /** Function: f_deadline_rechnung_o
 /** In: no input 
-/** Returns: a table containing all rechnungen, which must be paid in the next 3 weeks
-/** Developer: TCSDeveloper
-/** Description: The function searches for Rechnungen, which must be paid in the next days or are already  (payment due date to suppliers is 20 Days)
+/** Returns: DeadlineTable AS TABLE OF DeadlineTableObj (RechnungsID VARCHAR(50),  Rechnungssumme NUMBER(7,2),   Datum DATE,   AusstellerID NUMBER,
+/**  EmpfaengerID NUMBER ) -> Table, zur besseren Darstellung in GUI
+/** Developer: Gruppe 3
+/** Description: Der Zweck dieser Function ist es, alle Rechungen herauszufinden, die die in den nächsten Wochen fällig sind.
 /**
 /*********************************************************************/
 

@@ -1,9 +1,9 @@
 /*
 Trigger: t_update_rechnungen_zbuch
-Type: After row
+Type: After Update
 Type Extension: update
 Developer: Group 3
-Description: After an update on Buchungspreis in the table Zimmerbuchung, then the Rechnungssumme in Rechnung will be updated.
+Description: Dieser Trigger aktualisiert den Rechnungspreis einer Rechnung immer, wenn der Bestellpreis einer Bestellung aus aktualisiert/geändert wird.
 */
 
 
@@ -20,7 +20,8 @@ BEGIN
   SET Rechnungssumme = :new.Buchungspreis
   WHERE RechnungsID = :new.RechnungsID;
   
-  DBMS_OUTPUT.put_line('Update in Rehcnung auch erfolgreich durchgeführt!');
+  DBMS_OUTPUT.put_line('Update in Rechnung auch erfolgreich durchgeführt!');
+  dbms_output.new_line;
 
 END;
 /

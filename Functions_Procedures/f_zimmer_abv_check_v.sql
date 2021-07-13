@@ -1,12 +1,10 @@
 /*********************************************************************
 /**
 /** Function: f_zimmer_abv_check_v
-/** In: user Input for ZimmerNr, Buchungsdatum, CheckIn, CheckOut and Price
-/** Returns: a comment if the room could be booked or not
-/** Developer: TCSDeveloper
-/** Description: The function searches in the db for bookings in the same room`
-/**             within the same timespan, if this is the case, the function gives an error,
-/**             if not, the function goes on adding the booking into the database
+/** In: user_zimmer IN NUMBER, user_buchungsdatum IN DATE, Dauertagen IN NUMBER, Preis IN NUMBER
+/** Returns: einem Kommentar über den Status: ou_message_to_user VARCHAR2(225)
+/** Developer: Gruppe 3
+/** Description: Der Zweck dieser Function ist zu prüfen, ob dieser Raum noch verfügbar ist.
 /**
 /*********************************************************************/
 

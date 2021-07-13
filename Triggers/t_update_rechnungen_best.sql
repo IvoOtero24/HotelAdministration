@@ -1,9 +1,9 @@
 /*
 Trigger: t_update_rechnungen_best
-Type: After row
+Type: After Update
 Type Extension: update
 Developer: Group 3
-Description: After an update on Preis in the table Bestelldetails, then the Rechnungssumme in Rechnung will be updated.
+Description: Dieser Trigger aktualisiert den Rechnungspreis einer Rechnung immer, wenn das Buchungspreis eines Zimmers aktualisiert/geändert wird.
 */
 
 
@@ -21,7 +21,8 @@ BEGIN
   FROM Bestellung 
   WHERE BestellungsID = :new.BestellungsID);
   
-  DBMS_OUTPUT.put_line('Update in Rehcnung auch erfolgreich durchgeführt!');
+  DBMS_OUTPUT.put_line('Update in Rechnung auch erfolgreich durchgeführt!');
+  dbms_output.new_line;
 
 END;
 /
