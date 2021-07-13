@@ -157,8 +157,8 @@ namespace HotelAdministration.Model
             }
 
             // insert into adresse
-            using (var cmd1 = new OracleCommand("INSERT INTO Adresse (Strasse, HausNr, TuerNr, PLZ, Ort, LandID) VALUES (" +
-                                               strasse + ", " + hausNr + ", " + tuerNr+ ", " + plz + ", " + ort + ", " + tmp_landid + ")", connection))
+            using (var cmd1 = new OracleCommand("INSERT INTO Adresse (Strasse, HausNr, TuerNr, PLZ, Ort, LandID) VALUES ('" +
+                                               strasse + "', " + hausNr + ", " + tuerNr+ ", " + plz + ", '" + ort + "', " + tmp_landid + ")", connection))
             {
                 cmd1.ExecuteNonQuery();
             }
@@ -177,30 +177,30 @@ namespace HotelAdministration.Model
             }
 
             // insert neue Person
-            using (var cmd3 = new OracleCommand("INSERT INTO Person (Vorname, Nachname, SVN, Geburtsdatum, AdressID, Email, Telefon) VALUES (" +
-                                               vorname +"," + nachname + "," + svn + "," + gebDatum + "," + tmp_adressid + ","
-                                               + email + "," + telefon + ")"
+            using (var cmd3 = new OracleCommand("INSERT INTO Person (Vorname, Nachname, SVN, Geburtsdatum, AdressID, Email, Telefon) VALUES ('" +
+                                               vorname + "','"  + nachname +  "',"  + svn +  ", to_date('"  + gebDatum.ToShortDateString() +  "', 'DD.MM.YYYY'),"  + tmp_adressid +  ",'"
+                                               + email +  "','" +  telefon  + "'" + ")"
                 , connection))
             {
                 cmd3.ExecuteNonQuery();
             }
 
             // get person ID von neue person
-            using (var cmd2 = new OracleCommand("SELECT PersonID FROM Person WHERE SVN = " + svn
+            using (var cmd2 = new OracleCommand("SELECT PersonID FROM Person WHERE SVN = " + svn + " "
                 , connection))
             {
                 using (var reader = cmd2.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        tmp_adressid = reader.GetInt32(0);
+                        tmp_personid = reader.GetInt32(0);
                     }
                 }
             }
 
             // insert neue Bankinfos
             using (var cmd2 = new OracleCommand("INSERT INTO Bankinformation (KONTONR, IBAN, BANKNAME, ADRESSID) VALUES (" +
-                                                 kontonr + ", " + iban + ", " + bankname + ", " + tmp_adressid + ", " + ")" 
+                                                 kontonr + ", '" + iban + "', '" + bankname + "', " + tmp_adressid + ")" 
                 , connection))
             {
                 cmd2.ExecuteNonQuery();
@@ -236,7 +236,7 @@ namespace HotelAdministration.Model
 
             // insert endlich into Personal
             using (var cmd2 = new OracleCommand("INSERT INTO Personal (PERSONID, GEHALTSSTUFEID, KONTOID, ABTEILUNGSID) VALUES (" +
-                                                tmp_personid + ", " + gehaltsStufe + ", " + tmp_kontoid + ", " + tmp_abteilungsid + ", " + ")"
+                                                tmp_personid + ", " + gehaltsStufe + ", " + tmp_kontoid + ", " + tmp_abteilungsid + ")"
                 , connection))
             {
                 cmd2.ExecuteNonQuery();
@@ -246,7 +246,7 @@ namespace HotelAdministration.Model
         public void DeleteMitarbeiter(int toDeleteMitarbeiterID)
         {
             // insert into adresse
-            using (var cmd1 = new OracleCommand("DELETE * FROM Personal WHERE PersonID = " + toDeleteMitarbeiterID   ,   connection))
+            using (var cmd1 = new OracleCommand("DELETE FROM Personal WHERE PersonID = " + toDeleteMitarbeiterID   ,   connection))
             {
                 cmd1.ExecuteNonQuery();
             }

@@ -86,7 +86,7 @@
                 HorizontalAlignment="Right"
                 Background="Lavender"
                 Command="{Binding MitarbeiterAddCommand}"
-                Content="Hinzüfungen" />
+                Content="Hinzufügen" />
 
             <!--  Mitarbeiterübersicht  -->
             <TextBlock

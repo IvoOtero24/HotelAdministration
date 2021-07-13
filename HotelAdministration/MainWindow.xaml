@@ -48,7 +48,7 @@
                 <TextBlock
                     Margin="0,0,0,5"
                     HorizontalAlignment="Center"
-                    Text="Bitte wählen sie einer der folgenden Übersichten, um ihre Hotel-Datenbank zu verwalten: " />
+                    Text="Bitte wählen sie eine der folgenden Übersichten, um ihre Hotel-Datenbank zu verwalten: " />
             </Border>
         </StackPanel>
 

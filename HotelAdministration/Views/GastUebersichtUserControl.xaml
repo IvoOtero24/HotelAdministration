@@ -31,7 +31,7 @@
                 <Label
                     Margin="0,10"
                     VerticalAlignment="Center"
-                    Content="Gesamtanzahl an Gäste: "
+                    Content="Gesamtanzahl der Gäste: "
                     FontSize="14"
                     FontWeight="SemiBold" />
                 <TextBlock

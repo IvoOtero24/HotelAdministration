@@ -14,6 +14,7 @@ namespace HotelAdministration.ViewModel
 {
     public class AddMitarbeiterViewModel : ViewModelBase
     {
+        DbConnection _connection = new DbConnection();
         public ObservableCollection<Mitarbeiter> Mitarbeiterliste { get; set; }
         private Mitarbeiter _selectedMitarbeiter;
 
@@ -233,21 +234,24 @@ namespace HotelAdministration.ViewModel
 
         public AddMitarbeiterViewModel()
         {
-            DbConnection connection = new DbConnection();
-            Mitarbeiterliste = connection.GetMitarbeiter();
+            Mitarbeiterliste = _connection.GetMitarbeiter();
 
             MitarbeiterDeleteCommand = new RelayCommand(
                 () =>
                 {
-                    connection.DeleteMitarbeiter(SelectedMitarbeiter.PersonID);
+                    _connection.DeleteMitarbeiter(SelectedMitarbeiter.PersonID);
+                    Mitarbeiterliste = _connection.GetMitarbeiter();
+                    RaisePropertyChanged("Mitarbeiterliste");
 
                 });
 
             MitarbeiterAddCommand = new RelayCommand(
                 () =>
                 {
-                    connection.InsertMitarbeiter(Vorname, Nachname, GebDatum, SVN, Gehaltsstufe, Email, TelNummer, 
+                    _connection.InsertMitarbeiter(Vorname, Nachname, GebDatum, SVN, Gehaltsstufe, Email, TelNummer, 
                         Strasse, HausNr, TuerNr, PLZ, Ort, Land, KontoNr, IBAN, BankName, Abteilung);
+                    Mitarbeiterliste = _connection.GetMitarbeiter();
+                    RaisePropertyChanged("Mitarbeiterliste");
                 }, () => Vorname != null && Nachname != null);
 
         }
