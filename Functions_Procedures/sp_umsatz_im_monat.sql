@@ -16,7 +16,7 @@ set serveroutput on;
 
 /
 
-CREATE OR REPLACE PROCEDURE sp_umsatzimmonat
+CREATE OR REPLACE PROCEDURE sp_umsatz_im_monat
  (v_monat in Char, v_jahr in Char)
  
 AS
@@ -33,4 +33,4 @@ DBMS_OUTPUT.put_line('Monatsumsatz für das Jahr ' || v_jahr || ' und Monat ' ||
 END;
 /
 
-exec sp_umsatzimmonat('06','21');
+exec sp_sp_umsatz_im_monat('06','21');
