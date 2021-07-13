@@ -30,12 +30,13 @@ INNER JOIN Rechnung USING (RechnungsID);
 ------------------------
 
 CREATE OR REPLACE VIEW GastOverview AS
-SELECT Person.vorname, Person.nachname, Adresse.Ort, Adresse.Land, ReisepassID, COUNT(*) as Anzahl
+SELECT Person.vorname, Person.nachname, Adresse.Ort, Land.Landname, ReisepassID, COUNT(*) as Anzahl
 FROM Zimmerbuchung
 INNER JOIN Person USING (PersonID)
 INNER JOIN Gast USING (PersonID)
 INNER JOIN Adresse USING (AdressID)
-GROUP BY PersonID, Person.vorname, Person.nachname, Adresse.Ort, Adresse.Land, ReisepassID;
+INNER JOIN Land USING (LandID)
+GROUP BY PersonID, Person.vorname, Person.nachname, Adresse.Ort, Land.Landname, ReisepassID;
 
 ------------------------
 -- KundenbewertungView
