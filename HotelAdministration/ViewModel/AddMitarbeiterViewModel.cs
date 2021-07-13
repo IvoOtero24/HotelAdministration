@@ -252,7 +252,8 @@ namespace HotelAdministration.ViewModel
                         Strasse, HausNr, TuerNr, PLZ, Ort, Land, KontoNr, IBAN, BankName, Abteilung);
                     Mitarbeiterliste = _connection.GetMitarbeiter();
                     RaisePropertyChanged("Mitarbeiterliste");
-                }, () => Vorname != null && Nachname != null);
+                }, () => Vorname != null && Nachname != null && SVN != 0 && Gehaltsstufe != 0 & Email!= null && TelNummer != null 
+                                    && Strasse != null && TuerNr != 0 && PLZ != 0 && Ort != null && Land != null && KontoNr != 0 && IBAN != null && BankName != null && Abteilung != null);
 
         }
     }
