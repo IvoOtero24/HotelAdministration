@@ -2,13 +2,12 @@
 /**
 /** Function: f_check_schlechste_bew_o
 /** In: no input parameter
-/** Returns: a Table object with the "worst" reviews (with rating < 5 out of 10)
-/** Developer: TCSDeveloper
-/** Description: The function searches and returns the worst
-/**               reviews given by customers (with rating < 5)
+/** Returns: ein Tabellenobjekt mit den "schlechtesten" Bewertungen (mit Bewertung < 5 von 10)
+/** Developer: Group 3
+/** Description: Die Funktion sucht und gibt das Schlimmste zurück returns
+/** Bewertungen von Kunden (mit Bewertung < 5)
 /**
 /*********************************************************************/
-
 
 CREATE OR REPLACE TYPE SchlechteBewertungenObj AS OBJECT
 (
