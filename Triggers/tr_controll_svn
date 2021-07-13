@@ -3,7 +3,7 @@
 /**
 /** Trigger: tr_controll_svn
 /** Type: Before Insert
-/** Type Extension: delete
+/** Type Extension: 
 /** Developer: Satveer Baraich
 /** Description: Dieser Trigger kontrolliert, ob die angebene SVN der einzufügenden 
 /** Person aus genau 10 Zeichen bestehet. 
