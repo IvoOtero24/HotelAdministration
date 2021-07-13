@@ -5,7 +5,7 @@
 -----------------------------
 CREATE TABLE WarenArt(
 	WarenArtID NUMBER NOT NULL,
-	WarenArtName VARCHAR2(50) NOT NULL 
+	WarenArtName VARCHAR2(50) NOT NULL UNIQUE
 );
 
 
@@ -14,7 +14,7 @@ CREATE TABLE WarenArt(
 -----------------------------
 CREATE TABLE Ware(
 	WarenID NUMBER NOT NULL,
-	WarenName VARCHAR2(50) NOT NULL,
+	WarenName VARCHAR2(50) NOT NULL UNIQUE,
 	Einzelpreis NUMBER(7,2) NOT NULL,
 	WarenArtID NUMBER NOT NULL
 );
@@ -39,7 +39,7 @@ CREATE TABLE Adresse(
 -----------------------------
 CREATE TABLE Service(
 	ServiceID NUMBER NOT NULL,
-	Beschreibung VARCHAR2(50) NOT NULL,
+	Beschreibung VARCHAR2(50) NOT NULL UNIQUE,
 	Einzelpreis NUMBER(7,2) NOT NULL
 );
 
@@ -48,7 +48,7 @@ CREATE TABLE Service(
 --  DDL table for Zimmer
 -------------------------------
 CREATE TABLE Zimmer(
-	ZimmerNr NUMBER NOT NULL,
+	ZimmerNr NUMBER NOT NULL UNIQUE,
 	ZimmerArt VARCHAR2(225) NOT NULL,
 	Einzelpreis NUMBER(7,2) NOT NULL
 );
@@ -60,7 +60,7 @@ CREATE TABLE Zimmer(
 CREATE TABLE Land(
 	LandID NUMBER NOT NULL,
 	Kennzeichen VARCHAR2(20) NOT NULL,
-	LandName VARCHAR2(255) NOT NULL
+	LandName VARCHAR2(255) NOT NULL UNIQUE
 );
 
 
@@ -78,7 +78,7 @@ CREATE TABLE Reisepass(
 -------------------------------
 CREATE TABLE Gehaltsstufe(
 	GehaltsstufeID NUMBER NOT NULL,
-	Monatsgehalt NUMBER(7,2) NOT NULL
+	Monatsgehalt NUMBER(7,2) NOT NULL UNIQUE
 );
 
 
@@ -87,7 +87,7 @@ CREATE TABLE Gehaltsstufe(
 -------------------------------
 CREATE TABLE Abteilung(
 	AbteilungsID NUMBER NOT NULL,
-	Beschreibung VARCHAR2(255) NOT NULL
+	Beschreibung VARCHAR2(255) NOT NULL UNIQUE
 );
 
 
@@ -99,7 +99,7 @@ CREATE TABLE Person(
 	PersonID NUMBER NOT NULL,
 	Vorname VARCHAR2(255) NOT NULL,
 	Nachname VARCHAR2(255) NOT NULL,	
-	SVN NUMBER NOT NULL,
+	SVN NUMBER NOT NULL UNIQUE,
 	Geburtsdatum DATE,
 	AdressID NUMBER NOT NULL,
 	Email VARCHAR2(255) NOT NULL,
@@ -113,7 +113,7 @@ CREATE TABLE Person(
 CREATE TABLE Bankinformation(
 	KontoID NUMBER NOT NULL,
 	KontoNr NUMBER NOT NULL,
-	IBAN VARCHAR2(255) NOT NULL,
+	IBAN VARCHAR2(255) NOT NULL UNIQUE,
 	Bankname VARCHAR2(255) NOT NULL,	
 	AdressID NUMBER NOT NULL
 );
@@ -155,7 +155,7 @@ CREATE TABLE Gast(
 -------------------------------------
 CREATE TABLE Lieferanten(
 	LieferantenID NUMBER NOT NULL,	
-	Lieferantenname VARCHAR2(255) NOT NULL,	
+	Lieferantenname VARCHAR2(255) NOT NULL UNIQUE,	
 	AdressID NUMBER NOT NULL,	
 	KontoID NUMBER NOT NULL
 );
@@ -683,7 +683,7 @@ CREATE SEQUENCE rechnungsid_seq START WITH 200;
 
 
 ---------------------------------------------
----------- Triggers für IDs -----------------
+---------- Triggers fï¿½r IDs -----------------
 ---------------------------------------------
 CREATE OR REPLACE TRIGGER t_add_person_id 
 BEFORE INSERT ON person 
