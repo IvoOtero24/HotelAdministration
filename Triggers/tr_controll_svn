@@ -1,0 +1,25 @@
+
+/*********************************************************************
+/**
+/** Trigger: tr_controll_svn
+/** Type: Before Insert
+/** Type Extension: delete
+/** Developer: Satveer Baraich
+/** Description: Dieser Trigger kontrolliert, ob die angebene SVN der einzufügenden 
+/** Person aus genau 10 Zeichen bestehet. 
+/** Falls nicht wird der Datensatz nicht eingefügt und es erscheint eine Fehlermeldung, 
+/** die den User bittet, die SVN zu Überprüfen.
+/**
+/*********************************************************************
+
+
+
+CREATE OR REPLACE TRIGGER tr_controll_svn
+    BEFORE INSERT OR UPDATE ON Person
+    FOR EACH ROW
+
+BEGIN
+    IF length(:new.SVN) <> 10 THEN
+    raise_application_error(-2008, 'Please check the entered SVN number!');
+    END IF;
+END;
